@@ -5,11 +5,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     absolute: "",
-    default: "Projects",
+    default: "Blogs",
     template: "%s | Khursheed Ahmed",
   },
   description:
-    "Explore the diverse portfolio of projects by Khursheed Ahmed, showcasing innovative solutions in web development, AI, machine learning, and software engineering.",
+    "Explore insightful articles and blogs by Khursheed Ahmed, covering topics like software development, AI, machine learning, web technologies, and more. Stay updated with the latest trends and innovations in the tech world.",
 };
 
 export default function ProjectLayout({
