@@ -3,10 +3,10 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import Banner from "./Banner";
+// import Banner from "./Banner";
 import { RxCaretRight } from "react-icons/rx";
 import { BsFileEarmarkPerson } from "react-icons/bs";
-import logo from "../public/logo.png";
+// import logo from "../public/logo.png";
 
 const navlinks = [
   {
