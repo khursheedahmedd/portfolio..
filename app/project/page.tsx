@@ -33,13 +33,13 @@ const projectTypes = [
 
 const initialProjects = [
   {
-    slug: "transform-portfolio-design-to-web-app-1",
-    title: "Transform Portfolio Design to Web App",
-    image: assets.home.myLatestProject.projects.portfolioWebsite,
-    repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-    demoUrl: "https://deri.my.id",
+    slug: "my-vision",
+    title: "myVision",
+    image: assets.home.myLatestProject.projects.myVision,
+    repositoryUrl: "https://github.com/khursheedahmedd/vision-guide",
+    demoUrl: "https://ibm-vision-guide.vercel.app/",
     summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "An AI-powered app for visually impaired users, utilizing IBM YOLO for object detection and voice-based interaction.",
     techStacks: [
       {
         name: "Next JS",
@@ -62,13 +62,13 @@ const initialProjects = [
     category: categories[0],
   },
   {
-    slug: "transform-portfolio-design-to-web-app-2",
-    title: "Portfolio 2",
-    image: assets.home.myLatestProject.projects.portfolioWebsite,
-    repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-    demoUrl: "https://deri.my.id",
+    slug: "lux-ride-sydney",
+    title: "Lux Ride Sydney",
+    image: assets.home.myLatestProject.projects.luxRide,
+    repositoryUrl: "https://github.com/khursheedahmedd",
+    demoUrl: "https://luxridesydney.com/",
     summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "A luxury ride-sharing platform in Australia, providing premium transportation services.",
     techStacks: [
       {
         name: "Next JS",
@@ -91,13 +91,12 @@ const initialProjects = [
     category: categories[0],
   },
   {
-    slug: "transform-portfolio-design-to-web-app-3",
-    title: "Portfolio 3",
-    image: assets.home.myLatestProject.projects.portfolioWebsite,
-    repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-    demoUrl: "https://deri.my.id",
-    summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    slug: "luma-ai",
+    title: "LUMA AI",
+    image: assets.home.myLatestProject.projects.lumaAI,
+    repositoryUrl: "https://github.com/khursheedahmedd/ai-assistant",
+    demoUrl: "https://luma-ai-assistant.vercel.app/",
+    summary: "A web based all in one AI solution platform.",
     techStacks: [
       {
         name: "Next JS",
@@ -120,13 +119,12 @@ const initialProjects = [
     category: categories[0],
   },
   {
-    slug: "transform-portfolio-design-to-web-app-4",
-    title: "Portfolio 4",
-    image: assets.home.myLatestProject.projects.portfolioWebsite,
-    repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-    demoUrl: "https://deri.my.id",
-    summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    slug: "eventussol",
+    title: "Eventussol",
+    image: assets.home.myLatestProject.projects.eventussol,
+    repositoryUrl: "https://github.com/khursheedahmedd",
+    demoUrl: "https://eventussol.com/",
+    summary: "A Next JS 3d portfolio website for Eventussol.",
     techStacks: [
       {
         name: "Next JS",
@@ -149,13 +147,13 @@ const initialProjects = [
     category: categories[0],
   },
   {
-    slug: "transform-portfolio-design-to-web-app-5",
-    title: "Portfolio 5",
-    image: assets.home.myLatestProject.projects.portfolioWebsite,
-    repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-    demoUrl: "https://deri.my.id",
+    slug: "climate-ai",
+    title: "Climate AI",
+    image: assets.home.myLatestProject.projects.climateAI,
+    repositoryUrl: "https://github.com/khursheedahmedd/climate-ai",
+    demoUrl: "https://climateai.vercel.app/",
     summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "A real-time AI-powered environmental health insights dashboard with data integration and community action planning.",
     techStacks: [
       {
         name: "Next JS",
@@ -178,13 +176,13 @@ const initialProjects = [
     category: categories[0],
   },
   {
-    slug: "transform-portfolio-design-to-web-app-6",
-    title: "Portfolio 6",
-    image: assets.home.myLatestProject.projects.portfolioWebsite,
-    repositoryUrl: "https://github.com/deri-kurniawan/portfolio",
-    demoUrl: "https://deri.my.id",
+    slug: "my-voice",
+    title: "myVoice",
+    image: assets.home.myLatestProject.projects.myVoice,
+    repositoryUrl: "https://github.com/khursheedahmedd/audio-app-frontend",
+    demoUrl: "https://audio-cloning-app.vercel.app/",
     summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "A MERN stack GenAI app that let you talk to dead person, give deceased person voice and talk to historical personality.",
     techStacks: [
       {
         name: "Next JS",
@@ -207,15 +205,13 @@ const initialProjects = [
     category: categories[0],
   },
   {
-    slug: "portfolio-web-design",
-    title: "Portfolio Web Design",
-    image: assets.home.myLatestProject.projects.portfolioWebsite,
-    repositoryUrl:
-      "https://dribbble.com/shots/21642242-3D-Theme-Portfolio-Website?utm_source=Clipboard_Shot&utm_campaign=deri-kurniawan&utm_content=3D%20Theme%20Portfolio%20Website&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=deri-kurniawan&utm_content=3D%20Theme%20Portfolio%20Website&utm_medium=Social_Share",
-    demoUrl:
-      "https://www.figma.com/proto/TYBBBbA5cvBN4QU70hNxvr/DK-PORTFOLIO?node-id=1-2&scaling=scale-down-width",
+    slug: "hexa-wear",
+    title: "Hexa Wear",
+    image: assets.home.myLatestProject.projects.hexaWear,
+    repositoryUrl: "https://github.com/khursheedahmedd/Hexawear",
+    demoUrl: "https://hexawear.vercel.app/",
     summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "A MERN stack e-commerce application where you can purchase any product without any hassle.",
     techStacks: [
       {
         name: "Next JS",
@@ -260,7 +256,7 @@ export default function Project() {
           transition={{ duration: 0.2 }}
           className="mb-6 text-5xl font-extrabold lg:text-6xl font-montserrat gradient-text"
         >
-          Explore Deri&apos;s Project
+          Explore Khursheed&apos;s Project
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}

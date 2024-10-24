@@ -1,7 +1,7 @@
 export const assets = {
   home: {
     hero: {
-      avatarSmile: require("@images/home/hero/avatar-smile.webp"),
+      avatarSmile: require("@images/home/hero/hero-icon.webp"),
       dribble: require("@images/home/hero/dribble.webp"),
       github: require("@images/home/hero/github.webp"),
       instagram: require("@images/home/hero/instagram.webp"),
@@ -12,7 +12,7 @@ export const assets = {
       zigZag: require("@images/home/hero/zig-zag.webp"),
     },
     letsConnect: {
-      avatarBigSmile: require("@images/home/letsConnect/avatar-big-smile.webp"),
+      avatarBigSmile: require("@images/home/letsConnect/contact-icon.webp"),
       dribble: require("@images/home/letsConnect/dribble.webp"),
       github: require("@images/home/letsConnect/github.webp"),
       gmail: require("@images/home/letsConnect/gmail.webp"),
@@ -24,7 +24,13 @@ export const assets = {
       rocket: require("@images/home/myLatestProject/rocket.webp"),
       suitcase: require("@images/home/myLatestProject/suitcase.webp"),
       projects: {
-        portfolioWebsite: require("@images/home/myLatestProject/projects/portfolio-website.webp"),
+        myVision: require("@images/home/myLatestProject/projects/myVision.webp"),
+        luxRide: require("@images/home/myLatestProject/projects/luxRide.webp"),
+        lumaAI: require("@images/home/myLatestProject/projects/lumaAI.webp"),
+        eventussol: require("@images/home/myLatestProject/projects/eventussol.webp"),
+        climateAI: require("@images/home/myLatestProject/projects/climateAI.webp"),
+        myVoice: require("@images/home/myLatestProject/projects/audioApp.webp"),
+        hexaWear: require("@images/home/myLatestProject/projects/hexaWear.webp"),
       },
     },
     quote: {

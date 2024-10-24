@@ -79,7 +79,7 @@ export default function SectionHero(): JSX.Element {
         <div className="flex flex-col items-center justify-center order-2 xl:items-start xl:order-1">
           <motion.p
             className="font-montserrat font-bold text-2xl md:text-[28px] lg:text-[32px] text-accent mb-3 text-center xl:text-left"
-            aria-label="Welcome to Deri's Portfolio"
+            aria-label="Welcome to Khursheed's Portfolio"
           >
             Welcome to Khursheed&apos;s Portfolio
           </motion.p>
@@ -91,7 +91,7 @@ export default function SectionHero(): JSX.Element {
           </motion.h2>
           <motion.p
             className="text-base font-medium text-center md:text-xl lg:text-2xl text-accent xl:text-left"
-            aria-label="I'm Deri Kurniawan. A passionate Full Stack Web Developer based in Sukabumi Regency, West Java, Indonesia."
+            aria-label="I'm Khursheed Ahmed. A passionate Full Stack Web Developer based in Sukabumi Regency, West Java, Indonesia."
           >
             I&apos;m Khursheed Ahmed. A passionate Full Stack Web Developer and
             Generative AI Engineer.
@@ -112,7 +112,7 @@ export default function SectionHero(): JSX.Element {
                   initial={{ opacity: 0.5, y: 500 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.2, duration: 1 }}
-                  aria-label="Deri's Avatar"
+                  aria-label="Khursheed's Avatar"
                 />
               </motion.div>
               {animatedImages.map(

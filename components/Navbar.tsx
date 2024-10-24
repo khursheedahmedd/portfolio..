@@ -96,8 +96,8 @@ export default function Navbar(): JSX.Element {
             </ul>
             <a
               className="px-6 py-2 text-white gradient-btn rounded-xl"
-              href="/"
-              download="Deri Kurniawan Resume"
+              href="/myResume.pdf"
+              download="Khursheed Resume"
             >
               Resume
             </a>
@@ -163,9 +163,9 @@ export default function Navbar(): JSX.Element {
             ))}
             <li className="flex text-white rounded-lg gradient-bg">
               <a
-                href="/"
+                href="/myResume.pdf"
                 className="flex-1 py-4 safe-x-padding"
-                download="Deri Kurniawan Resume"
+                download="Khursheed Resume"
               >
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-semibold">Resume</span>
