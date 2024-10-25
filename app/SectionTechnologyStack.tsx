@@ -14,31 +14,31 @@ const technologyStack = [
     image: assets.home.technologyStack.nextJs,
     officialSite: "https://nextjs.org/",
   },
-  // {
-  //     name: 'Laravel',
-  //     image: assets.home.technologyStack.laravel,
-  //     officialSite: 'https://laravel.com/',
-  // },
-  // {
-  //     name: 'Expo',
-  //     image: assets.home.technologyStack.expo,
-  //     officialSite: 'https://expo.dev/',
-  // },
-  // {
-  //     name: 'Prisma',
-  //     image: assets.home.technologyStack.prisma,
-  //     officialSite: 'https://www.prisma.io/',
-  // },
+  {
+    name: "Node JS",
+    image: assets.home.technologyStack.node,
+    officialSite: "https://nodejs.org/",
+  },
+  {
+    name: "MongoDB",
+    image: assets.home.technologyStack.mongo,
+    officialSite: "https://mongodb.com/",
+  },
+  {
+    name: "Vercel",
+    image: assets.home.technologyStack.vercel,
+    officialSite: "https://www.vercel.com/",
+  },
   {
     name: "Express JS",
     image: assets.home.technologyStack.expressJs,
     officialSite: "https://expressjs.com/",
   },
-  // {
-  //     name: "Planet Scale",
-  //     image: assets.home.technologyStack.planetScale,
-  //     officialSite: 'https://planetscale.com/',
-  // },
+  {
+    name: "Python",
+    image: assets.home.technologyStack.python,
+    officialSite: "https://python.org/",
+  },
   {
     name: "Javascript",
     image: assets.home.technologyStack.javascript,
@@ -63,6 +63,21 @@ const technologyStack = [
     name: "Typescript",
     image: assets.home.technologyStack.typescript,
     officialSite: "https://www.typescriptlang.org/",
+  },
+  {
+    name: "LLMs Integration",
+    image: assets.home.technologyStack.llm,
+    officialSite: "https://www.ibm.com/topics/large-language-models",
+  },
+  {
+    name: "Machine Learning",
+    image: assets.home.technologyStack.ml,
+    officialSite: "https://www.ibm.com/topics/machine-learning",
+  },
+  {
+    name: "GenAI",
+    image: assets.home.technologyStack.genai,
+    officialSite: "https://generativeai.net/",
   },
 ];
 
