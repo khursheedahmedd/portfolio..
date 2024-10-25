@@ -1,3 +1,4 @@
+import Whatsapp from "@/components/Whatsapp";
 import Footer from "../components/Footer";
 import SectionHero from "./SectionHero";
 import SectionLetsConnect from "./SectionLetsConnect";
@@ -14,6 +15,7 @@ export default function Home() {
       <SectionLetsConnect />
       <SectionQuote />
       <Footer />
+      <Whatsapp />
     </div>
-  )
+  );
 }
