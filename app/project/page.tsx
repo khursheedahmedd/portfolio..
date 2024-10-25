@@ -364,8 +364,8 @@ export default function Project() {
                       >
                         {project.category.slug === "design" ? (
                           <>
-                            {/* <span></span>
-                            <BsDribbble /> */}
+                            <span>Dribble</span>
+                            <BsDribbble />
                           </>
                         ) : (
                           <>
