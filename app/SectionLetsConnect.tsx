@@ -167,12 +167,14 @@ export default function SectionLetsConnect() {
               animate={inView ? { y: 0, opacity: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.8 }}
               className="z-[1] hover:cursor-pointer w-[100px] h-[100px]"
-              src={assets.home.letsConnect.dribble}
+              src={assets.home.letsConnect.whatsapp}
               alt=""
               width={100}
               height={100}
               tabIndex={0}
-              onClick={() => window.open("https://dribbble.com/", "_blank")}
+              onClick={() =>
+                window.open("https://wa.me/+923417122946", "_blank")
+              }
             />
             <AnimatedImage
               initial={{ y: 100, opacity: 0 }}
