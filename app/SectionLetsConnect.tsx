@@ -71,12 +71,12 @@ export default function SectionLetsConnect() {
       whileHover: { scale: 1.1, transition: { duration: 0.2 } },
       className:
         "hidden lg:block absolute hover:cursor-pointer bottom-14 left-36 xl:left-44 md:left-24 w-10 h-10 md:w-[168px] md:h-[168px] z-10",
-      src: assets.home.letsConnect.dribble,
+      src: assets.home.letsConnect.whatsapp,
       alt: "",
       width: 168,
       height: 168,
       tabIndex: 0,
-      onClick: () => window.open("https://dribbble.com/", "_blank"),
+      onClick: () => window.open("https://wa.me/+923417122946", "_blank"),
     },
     {
       initial: { y: 100, opacity: 0 },

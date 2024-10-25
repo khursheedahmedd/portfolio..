@@ -14,6 +14,7 @@ export const assets = {
     letsConnect: {
       avatarBigSmile: require("@images/home/letsConnect/contact-icon.webp"),
       dribble: require("@images/home/letsConnect/dribble.webp"),
+      whatsapp: require("@images/home/letsConnect/whatsapp-icon.webp"),
       github: require("@images/home/letsConnect/github.webp"),
       gmail: require("@images/home/letsConnect/gmail.webp"),
       instagram: require("@images/home/letsConnect/instagram.webp"),
@@ -21,6 +22,8 @@ export const assets = {
     },
     myLatestProject: {
       figma: require("@images/home/myLatestProject/figma.webp"),
+      ai: require("@images/home/myLatestProject/ai-icon.webp"),
+      dev: require("@images/home/myLatestProject/dev-icon.webp"),
       rocket: require("@images/home/myLatestProject/rocket.webp"),
       suitcase: require("@images/home/myLatestProject/suitcase.webp"),
       projects: {

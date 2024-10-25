@@ -10,13 +10,13 @@ import { useRouter } from "next/navigation";
 import { BsGithub } from "react-icons/bs";
 import { IoMdOpen } from "react-icons/io";
 import { BsInfoCircle } from "react-icons/bs";
-import { FiFigma } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 import styles from "./home.module.css";
 
 const tabs = [
   {
     name: "GenAI",
-    image: assets.home.myLatestProject.suitcase,
+    image: assets.home.myLatestProject.ai,
     data: [
       {
         slug: "my-vision",
@@ -64,7 +64,7 @@ const tabs = [
   },
   {
     name: "Web Dev",
-    image: assets.home.myLatestProject.figma,
+    image: assets.home.myLatestProject.dev,
     data: [
       {
         slug: "hexa-wear",
@@ -142,7 +142,7 @@ export default function SectionMyLatestProject() {
       </div>
       <div className="mt-[50px] h-full">
         <div className="flex flex-col items-center justify-center md:items-start md:flex-row gap-9">
-          <div className="flex flex-row md:flex-col bg-gray p-3 md:p-[26px] rounded-2xl md:rounded-[25px] gap-x-3 md:gap-x-0 gap-y-[26px]">
+          <div className="flex flex-row md:flex-col bg-gray p-3 md:p-[26px] rounded-2xl md:rounded-[25px] gap-x-3 md:gap-x-0 gap-y-[47px]">
             {tabs.map((tab, index) => (
               <motion.button
                 key={index.toString()}
@@ -242,7 +242,7 @@ export default function SectionMyLatestProject() {
                                     "project" ? (
                                       <BsGithub />
                                     ) : (
-                                      <FiFigma />
+                                      <FiGithub />
                                     )}
                                   </Link>
                                 )}
