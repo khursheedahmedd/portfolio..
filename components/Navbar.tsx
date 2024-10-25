@@ -21,6 +21,10 @@ const navlinks = [
     name: "Blog",
     href: "/blog",
   },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
 ];
 
 export default function Navbar(): JSX.Element {
@@ -75,7 +79,7 @@ export default function Navbar(): JSX.Element {
           <Link className="z-50" href="/" onClick={closeMenu} prefetch={false}>
             <div className="w-[32px] h-[40px] lg:w-[42px] lg:h-[50px]">
               {/* <img src={logo} alt="logo" className="w-full h-full" /> */}
-              <pre className="mt-2 text-3xl font-blod hover:text-gray-400">{`<Khursheed/>`}</pre>
+              <pre className="mt-2 text-3xl font-blod font-montserrat ">{`<Khursheed/>`}</pre>
             </div>
           </Link>
           {/* desktop menu */}

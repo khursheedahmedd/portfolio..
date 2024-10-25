@@ -254,7 +254,7 @@ export default function Project() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.2 }}
-          className="mb-6 text-5xl font-extrabold lg:text-6xl font-montserrat gradient-text"
+          className="mb-6 text-3xl font-extrabold lg:text-6xl font-montserrat gradient-text"
         >
           Explore Khursheed&apos;s Project
         </motion.h2>

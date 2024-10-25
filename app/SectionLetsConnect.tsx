@@ -100,7 +100,7 @@ export default function SectionLetsConnect() {
       className={`safe-x-padding ${styles.sectionDistance} overflow-y-hidden lg:h-[1000px]`}
       aria-label="Let's Connect Section"
     >
-      <div className="text-center">
+      {/* <div className="text-center">
         <motion.h2
           initial={{ y: 100, opacity: 0 }}
           animate={inView ? { y: 0, opacity: 1 } : {}}
@@ -119,7 +119,7 @@ export default function SectionLetsConnect() {
           am here to help and excited to hear from you. You can also take a look
           at my work.
         </motion.p>
-      </div>
+      </div> */}
       <div className="h-full mt-4">
         <div className="relative flex flex-col items-center justify-center">
           <div className="hidden lg:block absolute animate-ping -z-[2]">

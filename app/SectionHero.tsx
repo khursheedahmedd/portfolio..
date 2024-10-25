@@ -2,8 +2,11 @@
 
 import { assets } from "@/constant/assets";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { MotionProps, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react";
+import TypedText from "@/components/TypesText";
 
 interface IAnimateImageProps extends MotionProps {
   className: string;
@@ -20,6 +23,7 @@ export default function SectionHero(): JSX.Element {
     threshold: 0.1,
     triggerOnce: true,
   });
+  const router = useRouter();
 
   const animatedImages: IAnimateImageProps[] = [
     {
@@ -68,6 +72,22 @@ export default function SectionHero(): JSX.Element {
     },
   ];
 
+  // Typing animation text state
+  const titles = [
+    "Full Stack Web Developer",
+    "Generative AI Engineer",
+    "Machine Learning Engineer",
+  ];
+  const [titleIndex, setTitleIndex] = useState(0);
+
+  // Typing effect logic
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);
+    }, 3000); // Change title every 3 seconds
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <section
       ref={ref}
@@ -77,26 +97,36 @@ export default function SectionHero(): JSX.Element {
       <div className="grid grid-flow-row gap-10 xl:grid-cols-2 xl:grid-flow-col xl:gap-0">
         {/* first */}
         <div className="flex flex-col items-center justify-center order-2 xl:items-start xl:order-1">
-          <motion.p
-            className="font-montserrat font-bold text-2xl md:text-[28px] lg:text-[32px] text-accent mb-3 text-center xl:text-left"
-            aria-label="Welcome to Khursheed's Portfolio"
-          >
-            Welcome to Khursheed&apos;s Portfolio
-          </motion.p>
           <motion.h2
-            className="font-montserrat font-extrabold text-5xl md:text-[64px] md:leading-[56px] lg:text-[66px] lg:leading-[88px] gradient-text mb-6 text-center xl:text-left"
-            aria-label="Full Stack Web Developer"
+            className="font-montserrat mb-6 font-extrabold text-xl md:text-[44px] md:leading-[56px] lg:text-[46px] lg:leading-[88px] gradient-text  text-center xl:text-left"
+            aria-label="Typing Animation for Developer Roles"
           >
-            Full Stack Web App Developer
+            Hi There!<br></br>I&apos;m Khursheed Ahmed
           </motion.h2>
           <motion.p
+            className="font-montserrat font-bold text-xl md:text-[28px] lg:text-[32px] text-accent mb-3 text-center xl:text-left"
+            aria-label="Welcome to Khursheed's Portfolio"
+          >
+            A&nbsp;
+            <TypedText /> {/* Render the typing effect */}
+          </motion.p>
+          {/* <motion.p
             className="text-base font-medium text-center md:text-xl lg:text-2xl text-accent xl:text-left"
-            aria-label="I'm Khursheed Ahmed. A passionate Full Stack Web Developer based in Sukabumi Regency, West Java, Indonesia."
+            aria-label="I'm Khursheed Ahmed. A passionate Full Stack Web Developer and Generative AI Engineer."
           >
             I&apos;m Khursheed Ahmed. A passionate Full Stack Web Developer and
             Generative AI Engineer.
-          </motion.p>
+          </motion.p> */}
+
+          {/* Work with Me Button */}
+          <motion.button
+            className="mt-6 px-6 py-2 text-white gradient-btn rounded-xl"
+            onClick={() => router.push("/contact")}
+          >
+            Work With Me
+          </motion.button>
         </div>
+
         {/* second */}
         <div className="xl:order-2">
           <div className="relative flex items-center justify-center order-1 xl:justify-end">

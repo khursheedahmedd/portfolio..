@@ -12,7 +12,7 @@ export default function Home() {
       <SectionHero />
       <SectionTechnologyStack />
       <SectionMyLatestProject />
-      <SectionLetsConnect />
+      {/* <SectionLetsConnect /> */}
       <SectionQuote />
       <Footer />
       <Whatsapp />
