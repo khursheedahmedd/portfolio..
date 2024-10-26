@@ -111,7 +111,7 @@ export default function ContactPage() {
           </motion.div>
         </div>
       </section>
-      <SectionLetsConnect />
+      {/* <SectionLetsConnect /> */}
     </div>
   );
 }

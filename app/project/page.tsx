@@ -230,8 +230,8 @@ const initialProjects = [
         webUrl: "https://nodejs.org/en/",
       },
     ],
-    projectType: projectTypes[1],
-    category: categories[1],
+    projectType: projectTypes[0],
+    category: categories[0],
   },
 ];
 
@@ -292,9 +292,9 @@ export default function Project() {
                       src={project.image}
                       alt={`${project.title} thumbnail`}
                     />
-                    <div className="absolute top-0 right-0 p-2 bg-black z-[1] text-white rounded-bl-2xl text-sm hover:opacity-0 transition-all duration-500 ease-in-out">
+                    {/* <div className="absolute top-0 right-0 p-2 bg-black z-[1] text-white rounded-bl-2xl text-sm hover:opacity-0 transition-all duration-500 ease-in-out">
                       {project.projectType.name}
-                    </div>
+                    </div> */}
                   </div>
                   <div className="absolute bottom-0 left-0 px-6 py-3">
                     <div className="flex flex-row flex-wrap gap-x-4">
