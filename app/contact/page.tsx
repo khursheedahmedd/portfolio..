@@ -13,7 +13,7 @@ export default function ContactPage() {
     message: "",
   });
 
-  const queryOptions = ["Hire Me", "Work With Me", "General Query"];
+  const queryOptions = ["Hiring Me", "Work With Me", "Other"];
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -26,7 +26,7 @@ export default function ContactPage() {
 
   return (
     <div>
-      <section className="px-4 py-2 md:py-12 ">
+      <section className="px-4 py-2 md:py-12">
         <div className="text-center">
           <motion.h2
             initial={{ y: 100, opacity: 0 }}
@@ -46,14 +46,14 @@ export default function ContactPage() {
           </motion.p>
         </div>
 
-        <div className="mt-12 flex justify-center w-full md:w-3/4 lg:w-1/2 mx-auto">
+        <div className="mt-12 flex justify-center w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="bg-gray-100 rounded-3xl p-8 w-full max-w-md shadow-lg"
+            className="bg-gray-100 rounded-3xl p-8 w-full max-w-2xl shadow-lg"
           >
-            <form className="grid grid-cols-1 gap-6 ">
+            <form className="grid grid-cols-1 gap-6">
               <div className="grid grid-cols-2 gap-6">
                 <input
                   type="text"
@@ -61,7 +61,6 @@ export default function ContactPage() {
                   placeholder="First Name"
                   value={formData.firstName}
                   onChange={handleInputChange}
-                  // className="input-field"
                   className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:border-primary transition"
                 />
                 <input
