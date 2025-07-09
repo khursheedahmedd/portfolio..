@@ -81,7 +81,7 @@ export default function ProjectDetailPage() {
         <p className="text-xl text-gray-600 mb-6 max-w-4xl">
           {project.summary}
         </p>
-        <div className="flex flex-wrap gap-4 mb-8">
+        {/* <div className="flex flex-wrap gap-4 mb-8">
           {project.techStacks.map((tech) => (
             <a
               key={tech.name}
@@ -94,7 +94,7 @@ export default function ProjectDetailPage() {
               {tech.name}
             </a>
           ))}
-        </div>
+        </div> */}
         <div className="flex flex-wrap gap-4 mb-8">
           {project.demoUrl && (
             <a
