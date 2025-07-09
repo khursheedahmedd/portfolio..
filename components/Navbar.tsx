@@ -18,6 +18,10 @@ const navlinks = [
     href: "/project",
   },
   {
+    name: "Certifications",
+    href: "/certifications",
+  },
+  {
     name: "Blog",
     href: "/blog",
   },
