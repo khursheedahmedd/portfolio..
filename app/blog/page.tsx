@@ -2,51 +2,9 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { blogPosts } from "@/constant/blogs";
 
 export default function Blog() {
-  const blogs = [
-    {
-      id: 1,
-      title: "Exploring the Future of AI",
-      description:
-        "An in-depth look at how AI is transforming industries and the future potential it holds.",
-      date: "October 24, 2024",
-      link: "/blog/exploring-the-future-of-ai",
-    },
-    {
-      id: 2,
-      title: "Top 10 Web Development Trends",
-      description:
-        "A guide to the latest web development trends that are shaping the industry in 2024.",
-      date: "September 15, 2024",
-      link: "/blog/top-10-web-development-trends",
-    },
-    {
-      id: 3,
-      title: "Mastering Tailwind CSS",
-      description:
-        "Tips and tricks for creating beautiful, responsive designs with Tailwind CSS.",
-      date: "August 10, 2024",
-      link: "/blog/mastering-tailwind-css",
-    },
-    {
-      id: 4,
-      title: "The Rise of Serverless Architecture",
-      description:
-        "An exploration of serverless architecture and its impact on modern web development.",
-      date: "July 22, 2024",
-      link: "/blog/the-rise-of-serverless-architecture",
-    },
-    {
-      id: 5,
-      title: "Understanding TypeScript",
-      description:
-        "A beginner's guide to TypeScript and how it can enhance JavaScript projects.",
-      date: "June 15, 2024",
-      link: "/blog/understanding-typescript-for-js-developers",
-    },
-  ];
-
   return (
     <div className="safe-layout px-4 py-8 md:py-12">
       <div className="text-center mb-12">
@@ -60,19 +18,21 @@ export default function Blog() {
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {blogs.map((blog) => (
-          <Link href={blog.link} key={blog.id}>
+        {blogPosts.map((blog) => (
+          <Link href={`/blog/${blog.id}`} key={blog.id}>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.5 }}
-              className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-all cursor-pointer"
+              className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-all cursor-pointer h-full flex flex-col"
             >
-              <h3 className="text-2xl font-bold text-gray-800">{blog.title}</h3>
-              <p className="mt-2 text-gray-600">{blog.description}</p>
-              <p className="mt-4 text-sm text-gray-500">{blog.date}</p>
+              <h3 className="text-2xl font-bold text-gray-800 mb-3 line-clamp-2">{blog.title}</h3>
+              <p className="text-gray-600 flex-grow line-clamp-3">{blog.description}</p>
+              <div className="mt-4 pt-4 border-t border-gray-100">
+                <p className="text-sm text-gray-500">{blog.date}</p>
+              </div>
             </motion.div>
           </Link>
         ))}
