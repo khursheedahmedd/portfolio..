@@ -10,7 +10,7 @@ const TypedText: React.FC = () => {
       strings: [
         "Full Stack Web Developer",
         "Generative AI Engineer",
-        "Machine Learning Engineer",
+        "Agentic AI Engineer",
       ],
       typeSpeed: 80,
       backSpeed: 50,

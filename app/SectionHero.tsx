@@ -76,7 +76,7 @@ export default function SectionHero(): JSX.Element {
   const titles = [
     "Full Stack Web Developer",
     "Generative AI Engineer",
-    "Machine Learning Engineer",
+    "Agentic AI Engineer",
   ];
   const [titleIndex, setTitleIndex] = useState(0);
 
@@ -107,7 +107,7 @@ export default function SectionHero(): JSX.Element {
             className="font-montserrat font-bold text-xl md:text-[28px] lg:text-[32px] text-accent mb-3 text-center xl:text-left"
             aria-label="Welcome to Khursheed's Portfolio"
           >
-            A&nbsp;
+            
             <TypedText /> {/* Render the typing effect */}
           </motion.p>
           {/* <motion.p
