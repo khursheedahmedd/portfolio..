@@ -28,12 +28,16 @@ export const assets = {
       suitcase: require("@images/home/myLatestProject/suitcase.webp"),
       projects: {
         myVision: require("@images/home/myLatestProject/projects/myVision.webp"),
-        luxRide: require("@images/home/myLatestProject/projects/luxRide.webp"),
+        luxRide: require("@images/home/myLatestProject/projects/luxride.png"),
         lumaAI: require("@images/home/myLatestProject/projects/lumaAI.webp"),
         eventussol: require("@images/home/myLatestProject/projects/eventussol.webp"),
         climateAI: require("@images/home/myLatestProject/projects/climateAI.webp"),
         myVoice: require("@images/home/myLatestProject/projects/audioApp.webp"),
         hexaWear: require("@images/home/myLatestProject/projects/hexaWear.webp"),
+        streamlyAI: require("@images/home/myLatestProject/projects/streamlyai.png"),
+        privify: require("@images/home/myLatestProject/projects/privify.png"),
+        agroai: require("@images/home/myLatestProject/projects/agro-ai.png"),
+        clipsync: require("@images/home/myLatestProject/projects/clipsync.png"),
       },
     },
     quote: {
