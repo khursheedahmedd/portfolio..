@@ -90,7 +90,7 @@ export default function SectionLetsConnect() {
       width: 310,
       height: 310,
       tabIndex: 0,
-      onClick: () => window.open("mailto:deri.netuchi@gmail.com", "_self"),
+      onClick: () => window.open("mailto:khursheed6577@gmail.com", "_self"),
     },
   ];
 
