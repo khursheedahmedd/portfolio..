@@ -119,8 +119,21 @@ export default function ProjectDetailPage() {
             </a>
           )}
         </div>
-        {/* Project Images */}
-        {project.images && project.images.length > 0 && (
+        {/* Project Images or Demo Video */}
+        {project.demoVideoUrl ? (
+          <div className="flex flex-wrap gap-6 justify-center mb-12">
+            <div className="relative w-full max-w-xl h-64 rounded-xl overflow-hidden bg-black flex items-center justify-center">
+              <iframe
+                src={project.demoVideoUrl}
+                title={project.title + " Demo Video"}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full min-h-[256px]"
+                style={{ border: 0 }}
+              />
+            </div>
+          </div>
+        ) : project.images && project.images.length > 0 && (
           <div className="flex flex-wrap gap-6 justify-center mb-12">
             {project.images.map((img, idx) => (
               <div key={idx} className="relative w-full max-w-xl h-64 rounded-xl overflow-hidden bg-gray-100 flex items-center justify-center">

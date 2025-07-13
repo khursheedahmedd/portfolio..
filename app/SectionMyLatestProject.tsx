@@ -19,12 +19,19 @@ const tabs = [
     image: assets.home.myLatestProject.ai,
     data: [
       {
-        slug: "my-vision",
-        title: "myVision",
-        image: assets.home.myLatestProject.projects.myVision,
-        repositoryUrl: "https://github.com/khursheedahmedd/vision-guide",
-        demoUrl: "https://ibm-vision-guide.vercel.app/",
+        slug: "smartgradeai",
+        title: "Smart Grade AI",
+        image: assets.home.myLatestProject.projects.smartgradai,
+        repositoryUrl: "https://github.com/khursheedahmedd/agro-ai",
+        demoUrl: "https://smartgradeai.com/",
       },
+      // {
+      //   slug: "my-vision",
+      //   title: "myVision",
+      //   image: assets.home.myLatestProject.projects.myVision,
+      //   repositoryUrl: "https://github.com/khursheedahmedd/vision-guide",
+      //   demoUrl: "https://ibm-vision-guide.vercel.app/",
+      // },
       // {
       //   slug: "transform-portfolio-design-to-web-app-2",
       //   title: "Portfolio 2",
@@ -94,6 +101,13 @@ const tabs = [
         image: assets.home.myLatestProject.projects.clipsync,
         repositoryUrl: "https://github.com/khursheedahmedd/agro-ai",
         demoUrl: "https://cliprely.vercel.app/",
+      },
+      {
+        slug: "smartgradeai",
+        title: "Smart Grade AI",
+        image: assets.home.myLatestProject.projects.smartgradai,
+        repositoryUrl: "https://github.com/khursheedahmedd/agro-ai",
+        demoUrl: "https://smartgradeai.com/",
       },
     ],
   },

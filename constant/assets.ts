@@ -38,6 +38,7 @@ export const assets = {
         privify: require("@images/home/myLatestProject/projects/privify.png"),
         agroai: require("@images/home/myLatestProject/projects/agro-ai.png"),
         clipsync: require("@images/home/myLatestProject/projects/clipsync.png"),
+        smartgradai: require("@images/home/myLatestProject/projects/smartgradeai.png"),
       },
     },
     quote: {

@@ -57,12 +57,12 @@ export default function Project() {
               <h3 className="text-2xl font-bold text-accent mb-3 line-clamp-2">{project.title}</h3>
               <p className="text-gray-600 flex-grow line-clamp-3">{project.summary}</p>
               <div className="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
-                {/* {project.techStacks.map((tech) => (
+                {project.techStacks.map((tech) => (
                   <span key={tech.name} className="inline-flex items-center gap-1 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">
                     <img src={tech.imageUrl} alt={tech.name} width={18} height={18} className="inline-block" />
                     {tech.name}
                   </span>
-                ))} */}
+                ))}
               </div>
             </motion.div>
           </Link>

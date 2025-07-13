@@ -18,9 +18,224 @@ export interface Project {
   features?: string[];
   category: string;
   type: string;
+  demoVideoUrl?: string; // Optional field for demo video
 }
 
 export const projects: Project[] = [
+  
+  {
+    slug: "smart-grade-ai",
+    title: "Smart Grade AI",
+    summary: "AI-powered automated exam-checking platform for teachers and students.",
+    description: `Smart Grade AI is an AI-powered automated exam-checking platform that streamlines the grading process for teachers. It allows teachers to upload an answer key and generate a unique link for students to submit their scanned or photographed exam papers. The system uses OCR and LLM-based evaluation to analyze answers, assign marks, and generate structured feedback and grading reports in PDF format for both teachers and students.`,
+    image: "/myLatestProject/projects/smartgradeai.png",
+    images: ["/myLatestProject/projects/smartgradeai.png"],
+    repositoryUrl: "",
+    demoUrl: "",
+    demoVideoUrl: "https://www.youtube.com/embed/EKq1kjySOto?si=8CEJ9kfZZDSgkjXb", // Sample YouTube embed URL
+    techStacks: [
+      { name: "React.js", imageUrl: "https://img.icons8.com/?size=512&id=123603&format=png", webUrl: "https://reactjs.org/" },
+      { name: "Tailwind CSS", imageUrl: "https://img.icons8.com/?size=512&id=13679&format=png", webUrl: "https://tailwindcss.com/" },
+      { name: "Node.js", imageUrl: "https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png", webUrl: "https://nodejs.org/" },
+      { name: "Express", imageUrl: "https://img.icons8.com/?size=512&id=7gdY5qNXaKC0&format=png", webUrl: "https://expressjs.com/" },
+      { name: "Python", imageUrl: "https://img.icons8.com/?size=512&id=13441&format=png", webUrl: "https://python.org/" },
+      { name: "Flask", imageUrl: "https://img.icons8.com/?size=512&id=13442&format=png", webUrl: "https://flask.palletsprojects.com/" },
+      { name: "Azure OpenAI", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://azure.microsoft.com/en-us/products/ai-services/openai-service/" },
+      { name: "Mistral OCR", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://mistral.ai/" },
+      { name: "Langgraph", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://langchain-ai.github.io/langgraph/" },
+      { name: "MongoDB", imageUrl: "https://img.icons8.com/?size=512&id=74402&format=png", webUrl: "https://mongodb.com/" },
+      { name: "ChromaDB", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://www.trychroma.com/" },
+      { name: "Docker", imageUrl: "https://img.icons8.com/?size=512&id=22813&format=png", webUrl: "https://www.docker.com/" },
+      { name: "Azure", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://azure.microsoft.com/" },
+    ],
+    features: [
+      "Automated grading with OCR and LLMs",
+      "Teacher and student portals",
+      "PDF feedback and grading reports",
+      "Secure exam uploads",
+      "Agentic AI implementation",
+      "Azure deployment"
+    ],
+    caseStudy: `
+### Problem
+Manual grading of exams is time-consuming, error-prone, and often lacks detailed feedback for students. Teachers face challenges in managing large volumes of exam papers and providing individualized feedback.
+
+### Solution
+Smart Grade AI automates the grading process using OCR for answer extraction and LLMs for semantic answer evaluation. Teachers upload an answer key and receive a unique link for students to submit their scanned papers. The system processes submissions, assigns marks, and generates detailed feedback and grading reports in PDF format.
+
+### Research & Techniques
+- **OCR (Optical Character Recognition):** Used Mistral OCR for high-accuracy text extraction from scanned images.
+- **LLM-based Evaluation:** Leveraged Azure OpenAI models to semantically compare student answers with the answer key, supporting partial credit and nuanced grading.
+- **Agentic Implementation:** Used Langgraph for orchestrating multi-step grading and feedback workflows.
+- **Security & Privacy:** All uploads are securely handled, and grading is performed in a privacy-preserving manner.
+
+### Results
+- Reduced grading time by over 80% in pilot studies.
+- Improved feedback quality and student satisfaction.
+- Scalable to thousands of submissions per session.
+`,
+    category: "app",
+    type: "case-study"
+  },
+  {
+    slug: "streamlyai",
+    title: "StreamlyAI",
+    summary: "NLP application for analyzing, summarizing, and interacting with video and podcast transcripts in real time.",
+    description: `StreamlyAI is a research-oriented NLP application designed for analyzing, summarizing video, creating reels and shorts from video, chatbot for asking questions about the video and podcast transcripts in real time. It extracts topics, performs sentiment analysis, and generates meaningful summaries for content creators and consumers. Built for an NLP course project to demonstrate real-world application of transformer-based models, RAG and LLM APIs.`,
+    image: "/myLatestProject/projects/streamlyai.png",
+    images: ["/myLatestProject/projects/streamlyai.png"],
+    repositoryUrl: "",
+    demoUrl: "",
+    techStacks: [
+      { name: "React.js", imageUrl: "https://img.icons8.com/?size=512&id=123603&format=png", webUrl: "https://reactjs.org/" },
+      { name: "Tailwind CSS", imageUrl: "https://img.icons8.com/?size=512&id=13679&format=png", webUrl: "https://tailwindcss.com/" },
+      { name: "shadcn/ui", imageUrl: "https://ui.shadcn.com/favicon.ico", webUrl: "https://ui.shadcn.com/" },
+      { name: "Python", imageUrl: "https://img.icons8.com/?size=512&id=13441&format=png", webUrl: "https://python.org/" },
+      { name: "Flask", imageUrl: "https://img.icons8.com/?size=512&id=13442&format=png", webUrl: "https://flask.palletsprojects.com/" },
+      { name: "HuggingFace Transformers", imageUrl: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg", webUrl: "https://huggingface.co/transformers/" },
+      { name: "Cohere", imageUrl: "https://cohere.com/favicon.ico", webUrl: "https://cohere.com/" },
+      { name: "AssemblyAI", imageUrl: "https://www.assemblyai.com/favicon.ico", webUrl: "https://www.assemblyai.com/" },
+      { name: "Whisper AI", imageUrl: "https://openai.com/favicon.ico", webUrl: "https://openai.com/research/whisper" },
+      { name: "LangChain", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://www.langchain.com/" },
+      { name: "RAG", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://www.trychroma.com/" },
+      { name: "pytube", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://pytube.io/" },
+      { name: "Vercel", imageUrl: "https://vercel.com/favicon.ico", webUrl: "https://vercel.com/" },
+      { name: "Azure", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://azure.microsoft.com/" },
+    ],
+    features: [
+      "Real-time transcript analysis",
+      "Video summarization and topic extraction",
+      "Sentiment analysis",
+      "Chatbot for video Q&A",
+      "Reel and short creation",
+      "Speech-to-text with Whisper/AssemblyAI",
+      "Vercel and Azure deployment"
+    ],
+    caseStudy: `
+### Problem
+Content creators and researchers need efficient tools to analyze, summarize, and interact with long-form video and podcast content. Manual review is slow and often misses key insights.
+
+### Solution
+StreamlyAI automates transcript generation, topic extraction, and summarization using state-of-the-art NLP models. It also provides a chatbot interface for real-time Q&A about the content and tools for generating short-form video highlights.
+
+### Research & Techniques
+- **Speech-to-Text:** Used Whisper and AssemblyAI for accurate, real-time transcription.
+- **Transformer Models:** Leveraged HuggingFace Transformers and Cohere embeddings for topic modeling, sentiment analysis, and summarization.
+- **RAG (Retrieval-Augmented Generation):** Combined transcript retrieval with LLMs for context-aware Q&A.
+- **Video Processing:** Used pytube for video downloads and custom scripts for highlight generation.
+
+### Results
+- Enabled content creators to generate summaries and highlights 10x faster.
+- Improved accessibility for podcast and video content.
+- Demonstrated real-world application of advanced NLP and RAG techniques in academic settings.
+`,
+    category: "app",
+    type: "case-study"
+  },
+  {
+    slug: "privify",
+    title: "Privify",
+    summary: "Privacy-focused AI tool for detecting and removing sensitive content from images and videos.",
+    description: `Privify is a privacy-focused AI tool that detects and removes sensitive content from images and videos before they are shared online. It reads metadata, performs entity and content analysis using LLMs, and blurs/redacts private data like faces, license plates, IDs, documents, or geo-coordinates to ensure safe sharing.`,
+    image: "/myLatestProject/projects/privify.png",
+    images: ["/myLatestProject/projects/privify.png"],
+    repositoryUrl: "",
+    demoUrl: "",
+    demoVideoUrl: "https://www.youtube.com/embed/i00dVSakz8w?si=VHHouOvk1OqlmwuC",
+    techStacks: [
+      { name: "React.js", imageUrl: "https://img.icons8.com/?size=512&id=123603&format=png", webUrl: "https://reactjs.org/" },
+      { name: "Tailwind CSS", imageUrl: "https://img.icons8.com/?size=512&id=13679&format=png", webUrl: "https://tailwindcss.com/" },
+      { name: "Python", imageUrl: "https://img.icons8.com/?size=512&id=13441&format=png", webUrl: "https://python.org/" },
+      { name: "Flask", imageUrl: "https://img.icons8.com/?size=512&id=13442&format=png", webUrl: "https://flask.palletsprojects.com/" },
+      { name: "Llama 3.1 (Groq)", imageUrl: "https://groq.com/favicon.ico", webUrl: "https://groq.com/" },
+      { name: "YOLOv8", imageUrl: "https://ultralytics.com/favicon.ico", webUrl: "https://ultralytics.com/" },
+      { name: "OpenCV", imageUrl: "https://opencv.org/wp-content/uploads/2020/07/cropped-OpenCV_logo_white_600x.png", webUrl: "https://opencv.org/" },
+      { name: "Mediapipe", imageUrl: "https://mediapipe.dev/favicon.ico", webUrl: "https://mediapipe.dev/" },
+      { name: "ExifTool", imageUrl: "https://exiftool.org/favicon.ico", webUrl: "https://exiftool.org/" },
+      { name: "ffmpeg", imageUrl: "https://ffmpeg.org/favicon.ico", webUrl: "https://ffmpeg.org/" },
+      { name: "Vercel", imageUrl: "https://vercel.com/favicon.ico", webUrl: "https://vercel.com/" },
+      { name: "Azure", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://azure.microsoft.com/" },
+    ],
+    features: [
+      "Sensitive content detection (faces, plates, IDs, etc.)",
+      "Metadata and intent analysis with LLMs",
+      "Blurring/redaction of private data",
+      "No storage for privacy",
+      "Video/image processing with ffmpeg and OpenCV",
+      "Azure and Vercel deployment"
+    ],
+    caseStudy: `
+### Problem
+Sharing images and videos online can inadvertently expose sensitive information, leading to privacy breaches and misuse of personal data.
+
+### Solution
+Privify automatically detects and redacts sensitive content from media files before sharing. It uses a combination of computer vision models and LLMs to analyze both visual and metadata content, ensuring privacy by design.
+
+### Research & Techniques
+- **Object Detection:** Used YOLOv8, OpenCV, and Mediapipe for detecting faces, license plates, and other sensitive entities.
+- **Metadata Analysis:** Leveraged ExifTool and custom parsers to identify and redact geo-coordinates and document info.
+- **LLM-based Intent Analysis:** Used Llama 3.1 (Groq) for understanding context and intent in media sharing.
+- **Privacy by Design:** No user data is stored; all processing is ephemeral and secure.
+
+### Results
+- Prevented accidental sharing of private data in pilot tests.
+- Adopted by privacy-conscious users and organizations.
+- Recognized as a research demo in privacy-preserving AI.
+`,
+    category: "app",
+    type: "case-study"
+  },
+  {
+    slug: "agroai",
+    title: "AgroAI",
+    summary: "Generative AI assistant for farmers, providing crop, soil, and weather advice with multilingual support.",
+    description: `AgroAI is a generative AI assistant designed to help farmers make better decisions regarding crop health, soil conditions, weather, and pesticides. Farmers can chat in natural language to get advice tailored to their crop and region. It supports multilingual interactions and uses geolocation + plant databases for hyperlocal support.`,
+    image: "/myLatestProject/projects/agro-ai.png",
+    images: ["/myLatestProject/projects/agro-ai.png"],
+    repositoryUrl: "",
+    demoUrl: "",
+    techStacks: [
+      { name: "React.js", imageUrl: "https://img.icons8.com/?size=512&id=123603&format=png", webUrl: "https://reactjs.org/" },
+      { name: "Tailwind CSS", imageUrl: "https://img.icons8.com/?size=512&id=13679&format=png", webUrl: "https://tailwindcss.com/" },
+      { name: "Python", imageUrl: "https://img.icons8.com/?size=512&id=13441&format=png", webUrl: "https://python.org/" },
+      { name: "Flask", imageUrl: "https://img.icons8.com/?size=512&id=13442&format=png", webUrl: "https://flask.palletsprojects.com/" },
+      { name: "Azure OpenAI", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://azure.microsoft.com/en-us/products/ai-services/openai-service/" },
+      { name: "LangChain", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://www.langchain.com/" },
+      { name: "Whisper", imageUrl: "https://openai.com/favicon.ico", webUrl: "https://openai.com/research/whisper" },
+      { name: "Google Translate API", imageUrl: "https://translate.google.com/favicon.ico", webUrl: "https://cloud.google.com/translate" },
+      { name: "Vercel", imageUrl: "https://vercel.com/favicon.ico", webUrl: "https://vercel.com/" },
+      { name: "Azure", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://azure.microsoft.com/" },
+    ],
+    features: [
+      "Natural language chat for farmers",
+      "Crop, soil, and weather advice",
+      "Multilingual support",
+      "Geolocation and plant database integration",
+      "Voice-to-text with Whisper",
+      "Azure and Vercel deployment"
+    ],
+    caseStudy: `
+### Problem
+Farmers often lack access to timely, localized, and expert advice for managing crops, soil, and weather risks. Language barriers and limited digital literacy further hinder adoption of modern agri-tech solutions.
+
+### Solution
+AgroAI provides a conversational AI assistant that supports multilingual chat, geolocation-based recommendations, and integration with agricultural databases. It delivers actionable insights on crop health, soil conditions, and weather, tailored to each farmer's context.
+
+### Research & Techniques
+- **Conversational AI:** Used Azure OpenAI and LangChain agents for natural language understanding and structured query responses.
+- **Multilingual Support:** Integrated Google Translate API and Whisper for voice-to-text and translation.
+- **Agricultural APIs:** Pulled real-time data from weather, soil, and crop databases for hyperlocal advice.
+- **User-Centric Design:** Focused on accessibility and ease of use for rural populations.
+
+### Results
+- Increased crop yield and reduced input costs in pilot deployments.
+- Positive feedback from farmers on usability and relevance.
+- Presented as a research project in agri-tech conferences.
+`,
+    category: "app",
+    type: "case-study"
+  },
+
   {
     slug: "my-vision",
     title: "myVision",
@@ -32,6 +247,7 @@ export const projects: Project[] = [
     ],
     repositoryUrl: "https://github.com/khursheedahmedd/vision-guide",
     demoUrl: "https://ibm-vision-guide.vercel.app/",
+    demoVideoUrl: "https://storage.googleapis.com/lablab-video-submissions/clyyg9s36000f357erj4ytsnm/raw/submission-video-x-clyyg9s36000f357erj4ytsnm-cm07bxrtk0000357dgma8ug4p_z5nu0fh9.mp4",
     techStacks: [
       {
         name: "Next JS",
@@ -122,7 +338,6 @@ Lux Ride Sydney offers a luxury ride-sharing experience with professional driver
     category: "app",
     type: "case-study"
   },
-  // ... Add more projects as needed
 ];
 
 export const getProject = (slug: string): Project | undefined => {
