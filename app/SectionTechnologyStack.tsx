@@ -7,12 +7,13 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import styles from "./home.module.css";
+import { projects as allProjects } from "@/constant/projects";
 
 interface Technology {
   name: string;
   image: string;
   experience: string;
-  projects?: string[];
+  projects?: { title: string; slug: string }[];
   category: string; // Added category field
 }
 
@@ -29,68 +30,49 @@ const technologyStack: Technology[] = [
     name: "Next JS",
     image: assets.home.technologyStack.nextJs,
     experience: "Experienced in building full-stack applications with SSR.",
-    projects: ["Cryptonews", "Dreams Marketing", "Eventussol"],
+    // projects: [ ... will be dynamically generated ... ],
     category: "frontend",
   },
   {
     name: "Node JS",
     image: assets.home.technologyStack.node,
     experience: "Experienced in building backend with Node JS.",
-    projects: ["Lux Ride Sydney", "myVision", "Climate AI"],
     category: "backend",
   },
   {
     name: "MongoDB",
     image: assets.home.technologyStack.mongo,
     experience: "I have good experience working with MongoDB.",
-    projects: [
-      "Lux Ride Sydney",
-      "Dreams Marketing",
-      "Eventussol",
-      "Cryptonews",
-    ],
     category: "backend",
   },
   {
     name: "Vercel",
     image: assets.home.technologyStack.vercel,
     experience: "I have good deployment experience with Vercel.",
-    projects: [
-      "Lux Ride Sydney",
-      "Dreams Marketing",
-      "Eventussol",
-      "Cryptonews",
-      "myVision",
-      "Climate AI",
-    ],
     category: "devops",
   },
   {
     name: "Express JS",
     image: assets.home.technologyStack.expressJs,
     experience: "Experienced in building backend with Express JS.",
-    projects: ["Lux Ride Sydney", "myVision", "Climate AI"],
     category: "backend",
   },
   {
     name: "Clerk",
     image: assets.home.technologyStack.clerk,
     experience: "Experienced in building Auth with clerk.",
-    projects: ["Lux Ride Sydney", "myVision", "Climate AI"],
     category: "backend",
   },
   {
     name: "Flask",
     image: assets.home.technologyStack.flask,
     experience: "Experienced in building API's with Flask",
-    projects: ["Lux Ride Sydney", "myVision", "Climate AI"],
     category: "backend",
   },
   {
     name: "Supabase",
     image: assets.home.technologyStack.supabase,
     experience: "Experienced with Supabase Auth and DB.",
-    projects: ["Lux Ride Sydney", "myVision", "Climate AI"],
     category: "backend",
   },
   {
@@ -98,14 +80,12 @@ const technologyStack: Technology[] = [
     image: assets.home.technologyStack.python,
     experience:
       "Experienced in building full-stack applications in python with Flask. I have worked on several python libraries.",
-    projects: ["myVision"],
     category: "ai-ml",
   },
   {
     name: "Javascript",
     image: assets.home.technologyStack.javascript,
     experience: "Experienced in building full-stack applications with SSR.",
-    projects: ["Lux Ride Sydney", "myVision", "Climate AI"],
     category: "frontend",
   },
   {
@@ -113,27 +93,18 @@ const technologyStack: Technology[] = [
     image: assets.home.technologyStack.reactJs,
     experience:
       "I have good expertise in React JS. Work on so many projects that have frontend made with React JS.",
-    projects: ["Lux Ride Sydney", "Dreams Marketing", "Eventussol", "myVision"],
     category: "frontend",
   },
   {
     name: "Tailwind CSS",
     image: assets.home.technologyStack.tailwindCss,
     experience: "I have good expertise in building frontend with Tailwind.",
-    projects: [
-      "Lux Ride Sydney",
-      "Dreams Marketing",
-      "Eventussol",
-      "myVision",
-      "Climate AI",
-    ],
     category: "frontend",
   },
   {
     name: "Typescript",
     image: assets.home.technologyStack.typescript,
     experience: "Experienced in building full-stack applications with SSR.",
-    projects: ["Eventussol", "Dreams Marketing", "Cryptonews"],
     category: "frontend",
   },
   {
@@ -148,7 +119,6 @@ const technologyStack: Technology[] = [
     image: assets.home.technologyStack.langchain,
     experience:
       "I have worked on several GenAI products integrating langchain.",
-    projects: ["myVision", "LUMA AI", "Climate AI"],
     category: "ai-ml",
   },
   {
@@ -156,7 +126,6 @@ const technologyStack: Technology[] = [
     image: assets.home.technologyStack.langgraph,
     experience:
       "I have worked on several Agentic AI products integrating Langgraph.",
-    projects: ["myVision", "LUMA AI", "Climate AI"],
     category: "ai-ml",
   },
   {
@@ -164,7 +133,6 @@ const technologyStack: Technology[] = [
     image: assets.home.technologyStack.groq,
     experience:
       "I have worked on several Agentic AI and GenAI products integrating LLMs from Groq.",
-    projects: ["myVision", "LUMA AI", "Climate AI"],
     category: "ai-ml",
   },
   {
@@ -172,7 +140,6 @@ const technologyStack: Technology[] = [
     image: assets.home.technologyStack.chroma,
     experience:
       "I have worked on several RAG products that uses ChromaDB for vector store.",
-    projects: ["myVision", "LUMA AI", "Climate AI"],
     category: "ai-ml",
   },
   {
@@ -180,52 +147,126 @@ const technologyStack: Technology[] = [
     image: assets.home.technologyStack.azureai,
     experience:
       "I have worked on several integrating AI services from Azure AI studio.",
-    projects: ["myVision", "LUMA AI", "Climate AI"],
     category: "ai-ml",
   },
   {
     name: "Docker",
     image: assets.home.technologyStack.docker,
     experience: "I have good deployment experience with docker.",
-    projects: [
-      "Lux Ride Sydney",
-      "Dreams Marketing",
-      "Eventussol",
-      "Cryptonews",
-      "myVision",
-      "Climate AI",
-    ],
     category: "devops",
   },
   {
     name: "Dapr",
     image: assets.home.technologyStack.dapr,
     experience: "I have good experience in buidling distributed runtime environment with dapr.",
-    projects: [
-      "Lux Ride Sydney",
-      "Dreams Marketing",
-      "Eventussol",
-      "Cryptonews",
-      "myVision",
-      "Climate AI",
-    ],
     category: "devops",
   },
   {
     name: "Azure",
     image: assets.home.technologyStack.azure,
     experience: "I have good deployment experience with Azure.",
-    projects: [
-      "Lux Ride Sydney",
-      "Dreams Marketing",
-      "Eventussol",
-      "Cryptonews",
-      "myVision",
-      "Climate AI",
-    ],
     category: "devops",
   },
 ];
+
+// Dynamically add projects to each technology
+const technologyStackWithProjects = technologyStack.map(tech => {
+  const relatedProjects = allProjects.filter(project =>
+    project.techStacks.some(stack => stack.name.toLowerCase().replace(/\s+/g, "") === tech.name.toLowerCase().replace(/\s+/g, ""))
+  );
+  return {
+    ...tech,
+    projects: relatedProjects.map(p => ({ title: p.title, slug: p.slug })),
+  };
+});
+
+// After technologyStackWithProjects is defined, add the following manual project additions:
+const manualProjectAdditions: { [tech: string]: { title: string; slug: string }[] } = {
+  "Next JS": [
+    { title: "StreamlyAI", slug: "streamlyai" },
+  ],
+  "Node JS": [
+    { title: "Smart Grade AI", slug: "smart-grade-ai" },
+    { title: "clipSync", slug: "clipsync" },
+  ],
+  "MongoDB": [
+    { title: "AgroAI", slug: "agroai" },
+    { title: "StreamlyAI", slug: "streamlyai" },
+    { title: "Lux Ride Sydney", slug: "lux-ride-sydney" },
+  ],
+  "Vercel": [
+    { title: "Smart Grade AI", slug: "smart-grade-ai" },
+    { title: "Vibe Terminal", slug: "vibe-terminal" },
+    { title: "clipSync", slug: "clipsync" },
+  ],
+  "Express JS": [
+    { title: "Smart Grade AI", slug: "smart-grade-ai" },
+    { title: "clipSync", slug: "clipsync" },
+    { title: "Lux Ride Sydney", slug: "lux-ride-sydney" },
+    { title: "AgroAI", slug: "agroai" },
+    { title: "myVision", slug: "my-vision" },
+  ],
+  "Clerk": [
+    { title: "Smart Grade AI", slug: "smart-grade-ai" },
+    { title: "StreamlyAI", slug: "streamlyai" },
+  ],
+  "Supabase": [
+    { title: "StreamlyAI", slug: "streamlyai" },
+  ],
+  "Javascript": [
+    { title: "Smart Grade AI", slug: "smart-grade-ai" },
+    { title: "AgroAI", slug: "agroai" },
+    { title: "Privify", slug: "privify" },
+    { title: "Lux Ride Sydney", slug: "lux-ride-sydney" },
+    { title: "myVision", slug: "my-vision" },
+  ],
+  "React JS": [
+    { title: "clipSync", slug: "clipsync" },
+    { title: "AgroAI", slug: "agroai" },
+    { title: "StreamlyAI", slug: "streamlyai" },
+    { title: "Smart Grade AI", slug: "smart-grade-ai" },
+    { title: "Vibe Terminal", slug: "vibe-terminal" },
+  ],
+  "Typescript": [
+    { title: "StreamlyAI", slug: "streamlyai" },
+    { title: "clipSync", slug: "clipsync" },
+    { title: "Vibe Terminal", slug: "vibe-terminal" },
+    { title: "Privify", slug: "privify" },
+  ],
+  "Langchain": [
+    { title: "Privify", slug: "privify" },
+  ],
+  "Groq": [
+    { title: "Vibe Terminal", slug: "vibe-terminal" },
+    { title: "StreamlyAI", slug: "streamlyai" },
+    { title: "Privify", slug: "privify" },
+    { title: "AgroAI", slug: "agroai" },
+    { title: "myVision", slug: "my-vision" },
+  ],
+  "ChromaDB": [
+    { title: "StreamlyAI", slug: "streamlyai" },
+    { title: "AgroAI", slug: "agroai" },
+  ],
+  "Azure AI studio": [
+    { title: "Smart Grade AI", slug: "smart-grade-ai" },
+  ],
+  "Docker": [
+    { title: "Vibe Terminal", slug: "vibe-terminal" },
+    { title: "AgroAI", slug: "agroai" },
+    { title: "Privify", slug: "privify" },
+  ],
+};
+
+const technologyStackWithManual = technologyStackWithProjects.map(tech => {
+  const additions = manualProjectAdditions[tech.name] || [];
+  // Avoid duplicates by slug
+  const existingSlugs = new Set((tech.projects || []).map(p => p.slug));
+  const mergedProjects = [
+    ...(tech.projects || []),
+    ...additions.filter(p => !existingSlugs.has(p.slug)),
+  ];
+  return { ...tech, projects: mergedProjects };
+});
 
 export default function SectionTechnologyStack() {
   const { ref, inView } = useInView({
@@ -246,9 +287,10 @@ export default function SectionTechnologyStack() {
     setSelectedTech(null);
   };
 
+  // Use technologyStackWithManual instead of technologyStackWithProjects in the UI rendering
   const filteredTechnologies = selectedCategory === "all"
-    ? technologyStack
-    : technologyStack.filter(tech => tech.category === selectedCategory);
+    ? technologyStackWithManual
+    : technologyStackWithManual.filter(tech => tech.category === selectedCategory);
 
   return (
     <section ref={ref} className={`safe-x-padding ${styles.sectionDistance}`}>
@@ -343,7 +385,7 @@ export default function SectionTechnologyStack() {
               </h1>
               <p className="mb-4 text-center">{selectedTech.experience}</p>
               <div>
-                {selectedTech.projects && (
+                {selectedTech.projects && selectedTech.projects.length > 0 && (
                   <div>
                     <h3 className="text-lg font-semibold mb-2 text-left">
                       Projects:
@@ -351,7 +393,9 @@ export default function SectionTechnologyStack() {
                     <ul className="list-disc list-inside text-left">
                       {selectedTech.projects.map((project, index) => (
                         <li key={index} className="text-sm">
-                          {project}
+                          <Link href={`/project/${project.slug}`} className="text-primary hover:underline">
+                            {project.title}
+                          </Link>
                         </li>
                       ))}
                     </ul>
