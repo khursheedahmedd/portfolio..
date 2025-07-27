@@ -22,7 +22,61 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  
+  {
+    slug: "vibe-terminal",
+    title: "Vibe Terminal",
+    summary: "AI-powered, cross-platform terminal assistant for natural language command execution, voice input, and contextual shell automation.",
+    description: `Vibe Terminal is an intelligent, cross-platform terminal assistant that leverages AI agents for natural language command execution, voice input, and contextual shell automation. It integrates LangGraph for multi-step agent workflows and conversational context, enabling features like file management, undo/redo, and directory-aware responses. Voice interaction is designed using SpeechRecognition, PyAudio, and TTS (pyttsx3), with a CLI built on Typer and Rich for enhanced UX. The assistant supports secure API usage and cross-OS compatibility, delivering a modern GenAI-powered DevOps experience. Vibe Terminal empowers developers to interact with their system intuitively through natural language, reducing cognitive load and boosting productivity.`,
+    image: "/myLatestProject/projects/vibe-terminal.png",
+    images: ["/myLatestProject/projects/vibe-terminal.png"],
+    repositoryUrl: "",
+    demoUrl: "",
+    demoVideoUrl: "",
+    techStacks: [
+      { name: "LangGraph", imageUrl: "/technologyStack/langgraph.png", webUrl: "https://langchain-ai.github.io/langgraph/" },
+      { name: "Python", imageUrl: "/technologyStack/python.webp", webUrl: "https://python.org/" },
+      { name: "RAG", imageUrl: "/technologyStack/ChromaDB.png", webUrl: "https://www.trychroma.com/" },
+      { name: "ChromaDB", imageUrl: "/technologyStack/ChromaDB.png", webUrl: "https://www.trychroma.com/" },
+      { name: "Novita AI", imageUrl: "https://novita.ai/favicon.ico", webUrl: "https://novita.ai/" },
+      { name: "Flask", imageUrl: "/technologyStack/flask.webp", webUrl: "https://flask.palletsprojects.com/" },
+      { name: "SpeechRecognition", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://pypi.org/project/SpeechRecognition/" },
+      { name: "PyAudio", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://people.csail.mit.edu/hubert/pyaudio/" },
+      { name: "pyttsx3", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://pypi.org/project/pyttsx3/" },
+      { name: "Typer", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://typer.tiangolo.com/" },
+      { name: "Rich", imageUrl: "https://img.icons8.com/?size=512&id=20906&format=png", webUrl: "https://rich.readthedocs.io/" },
+    ],
+    features: [
+      "Natural language command execution",
+      "Voice input and TTS feedback",
+      "Contextual shell automation",
+      "Multi-step agent workflows (LangGraph)",
+      "File management, undo/redo, directory-aware responses",
+      "Secure API usage",
+      "Cross-OS compatibility",
+      "Modern CLI UX (Typer, Rich)"
+    ],
+    caseStudy: `
+### Problem
+Traditional terminal interfaces require memorization of commands and syntax, leading to cognitive overload and inefficiency, especially for complex workflows and automation.
+
+### Solution
+Vibe Terminal introduces an AI-powered, conversational interface for the terminal. By leveraging LangGraph for agentic workflows and integrating voice input/output, it allows users to interact with their system using natural language. Features like file management, undo/redo, and contextual responses make shell automation intuitive and accessible.
+
+### Research & Techniques
+- **LangGraph:** Orchestrates multi-step agent workflows for complex tasks.
+- **RAG & ChromaDB:** Enables retrieval-augmented command execution and contextual awareness.
+- **Voice Interaction:** Uses SpeechRecognition, PyAudio, and pyttsx3 for seamless voice input/output.
+- **Modern CLI:** Built with Typer and Rich for enhanced user experience.
+- **Security:** Ensures safe API usage and cross-platform compatibility.
+
+### Results
+- Reduced cognitive load for developers.
+- Increased productivity and task automation.
+- Positive feedback from DevOps and developer communities.
+`,
+    category: "app",
+    type: "case-study"
+  },
   {
     slug: "smart-grade-ai",
     title: "Smart Grade AI",
@@ -186,6 +240,54 @@ Privify automatically detects and redacts sensitive content from media files bef
     type: "case-study"
   },
   {
+    slug: "clipsync",
+    title: "clipSync",
+    summary: "Full-stack cross-platform app for clipboard syncing, file sharing, and collaborative workspaces with real-time features and modular architecture.",
+    description: `ClipSync is a full-stack, cross-platform application designed for seamless clipboard syncing, file sharing, and collaborative workspaces. The mobile app is built with React Native and Kotlin-based native overlay modules, while the web app uses React (Vite + Tailwind). Real-time synchronization is powered by Socket.io, with Supabase handling authentication, storage, and PostgreSQL database. Stripe integration enables premium feature subscriptions. The backend is architected with Node.js/Express RESTful APIs, ensuring a seamless user experience across Android, web, and desktop platforms.`,
+    image: "/myLatestProject/projects/clipsync.png",
+    images: ["/myLatestProject/projects/clipsync.png"],
+    repositoryUrl: "",
+    demoUrl: "",
+    demoVideoUrl: "",
+    techStacks: [
+      { name: "React.js", imageUrl: "/technologyStack/react-js.webp", webUrl: "https://reactjs.org/" },
+      { name: "React Native", imageUrl: "/technologyStack/react-native.webp", webUrl: "https://reactnative.dev/" },
+      { name: "Supabase", imageUrl: "/technologyStack/supabase.png", webUrl: "https://supabase.com/" },
+      { name: "Stripe", imageUrl: "/technologyStack/stripe.png", webUrl: "https://stripe.com/" },
+      { name: "Socket.io", imageUrl: "https://socket.io/images/logo.svg", webUrl: "https://socket.io/" },
+      { name: "Node.js", imageUrl: "/technologyStack/node.webp", webUrl: "https://nodejs.org/" },
+      { name: "Express", imageUrl: "/technologyStack/express-js.webp", webUrl: "https://expressjs.com/" },
+      { name: "Kotlin", imageUrl: "https://img.icons8.com/color/48/000000/kotlin.png", webUrl: "https://kotlinlang.org/" },
+      { name: "Vite", imageUrl: "https://vitejs.dev/logo.svg", webUrl: "https://vitejs.dev/" },
+      { name: "Tailwind CSS", imageUrl: "/technologyStack/tailwindcss.webp", webUrl: "https://tailwindcss.com/" }
+    ],
+    features: [
+      "Cross-platform clipboard syncing (web, mobile, desktop)",
+      "Real-time file sharing and collaboration",
+      "Collaborative workspaces with modular architecture",
+      "Supabase authentication and storage integration",
+      "Premium features with Stripe subscription",
+      "RESTful APIs with Node.js/Express",
+      "Kotlin-based native overlays for mobile",
+      "Seamless UX across Android, web, and desktop"
+    ],
+    caseStudy: `
+### Problem
+Managing clipboard data, files, and collaborative tasks across multiple devices and platforms is cumbersome and fragmented. Existing solutions often lack real-time sync, robust sharing, and seamless cross-platform support.
+
+### Solution
+ClipSync provides a unified platform for clipboard syncing, file sharing, and collaborative workspaces. Leveraging React.js and React Native for frontend, and Node.js/Express for backend, it ensures real-time updates via Socket.io and secure data management with Supabase. Stripe integration enables monetization of premium features, while modular architecture supports extensibility.
+
+### Results
+- Achieved seamless clipboard and file sync across web, mobile, and desktop.
+- Enabled real-time collaboration for distributed teams.
+- Streamlined user experience with robust authentication and payment flows.
+- Positive feedback from users for reliability and ease of use.
+`,
+    category: "app",
+    type: "case-study"
+  },
+  {
     slug: "agroai",
     title: "AgroAI",
     summary: "Generative AI assistant for farmers, providing crop, soil, and weather advice with multilingual support.",
@@ -338,6 +440,7 @@ Lux Ride Sydney offers a luxury ride-sharing experience with professional driver
     category: "app",
     type: "case-study"
   },
+
 ];
 
 export const getProject = (slug: string): Project | undefined => {
