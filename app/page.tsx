@@ -1,4 +1,5 @@
 import Whatsapp from "@/components/Whatsapp";
+import AIChatbot from "@/components/AIChatbot";
 import Footer from "../components/Footer";
 import SectionHero from "./SectionHero";
 import SectionLetsConnect from "./SectionLetsConnect";
@@ -16,6 +17,7 @@ export default function Home() {
       <SectionQuote />
       <Footer />
       <Whatsapp />
+      <AIChatbot />
     </div>
   );
 }
