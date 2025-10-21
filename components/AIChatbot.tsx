@@ -17,7 +17,7 @@ interface AIChatbotProps {
 }
 
 export default function AIChatbot({ 
-  apiUrl = process.env.NEXT_PUBLIC_CHATBOT_API_URL || "http://localhost:8000" 
+  apiUrl = process.env.NEXT_PUBLIC_CHATBOT_API_URL || "https://portfolio-chatbot-yvdb.onrender.com" 
 }: AIChatbotProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
