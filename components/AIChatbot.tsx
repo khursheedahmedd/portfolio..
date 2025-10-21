@@ -75,7 +75,7 @@ export default function AIChatbot({
         ...prev,
         {
           role: "assistant",
-          content: "Sorry, I encountered an error. Please make sure the chatbot server is running at " + apiUrl,
+          content: "Sorry, I encountered an error.",
         },
       ]);
     } finally {
