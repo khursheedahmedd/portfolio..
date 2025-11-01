@@ -17,8 +17,12 @@ interface AIChatbotProps {
 }
 
 export default function AIChatbot({ 
-  apiUrl = process.env.NEXT_PUBLIC_CHATBOT_API_URL || "https://portfolio-chatbot-yvdb.onrender.com" 
+  apiUrl 
 }: AIChatbotProps) {
+  // Use Next.js API route as proxy to avoid mixed content issues (HTTPS -> HTTP)
+  // The API route handles server-side requests to the chatbot backend
+  const chatbotApiUrl = '/api/chatbot';
+  
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
@@ -49,7 +53,7 @@ export default function AIChatbot({
     setIsLoading(true);
 
     try {
-      const response = await fetch(`${apiUrl}/query`, {
+      const response = await fetch(chatbotApiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -59,6 +63,10 @@ export default function AIChatbot({
           use_conversation_history: false,
         }),
       });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
       const data = await response.json();
 
@@ -71,11 +79,12 @@ export default function AIChatbot({
         },
       ]);
     } catch (error) {
+      console.error('Chatbot error:', error);
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
-          content: "Sorry, I encountered an error. Please make sure the chatbot server is running at " + apiUrl,
+          content: "Sorry, I encountered an error connecting to the chatbot. Please try again later or contact support.",
         },
       ]);
     } finally {

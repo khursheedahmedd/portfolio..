@@ -1,0 +1,643 @@
+KHURSHEED AHMED - PORTFOLIO INFORMATION
+
+=== PERSONAL INFORMATION ===
+Name: Khursheed Ahmed
+Roles: Full Stack Web Developer, Generative AI Engineer, Agentic AI Engineer
+Location: Pakistan
+Portfolio Website: https://khursheed.online
+
+Khursheed Ahmed grew up in a small village and began formal schooling in a government school. Early on he had modest ambitions, but encouragement from his elder brother (a software engineer) and friends changed his trajectory. He started programming in 2018 using Turbo C++ and developed a strong foundation in algorithms and system design. After initial attempts at higher education that included a brief enrollment in BS Computer Science and a later stint in Chartered Accountancy — where he passed multiple papers but failed one and re-enrolled in Software Engineering — Khursheed pivoted fully to software engineering and enrolled at UMT Lahore. Today, he sees himself as more than a developer — he's a problem solver, AI engineer, and entrepreneur who dreams of building impactful AI startups and contributing to global innovation. His story isn't about being lucky; it's about not giving up.
+
+Technically, Khursheed is proficient in C++ (strong DSA background), JavaScript/TypeScript, Python, the MERN stack, Next.js, FastAPI and Flask. He has practical experience building full-stack products that integrate generative AI: automated grading systems, privacy tools for media, farming-assist GenAI, and agentic code-migration tools. He’s participated in international hackathons (IBM WatsonX, Google Gemma, Microsoft Imagine Cup, Meta Hacker Cup) and earned placements, demonstrating product-focused engineering under time pressure. Currently, he balances university studies, startup roles as a co-founder and CTO, freelance gigs, and personal projects aimed at turning hackathon prototypes into scalable products.
+
+=== Early Life and Education ===
+- Grew up in a small village; started schooling at a government school.
+- 2018: Began learning programming.
+- Completed intermediate with 82% despite a 67% matric score.
+- Enrolled in BS Computer Science at Minhaj University (left after one semester).
+- Pursued Chartered Accountancy — later left CA after 1.5 years and return to software engineering.
+- Enrolled in BS Software Engineering at UMT Lahore; currently in 7th semester.
+
+=== PROFESSIONAL SUMMARY ===
+Khursheed Ahmed is a passionate and skilled software engineer specializing in Full Stack Web Development, Generative AI, and Agentic AI Engineering. With expertise in modern web technologies and cutting-edge AI frameworks, he builds innovative solutions that solve real-world problems. He has a proven track record of winning hackathons, building production-grade applications, and contributing to the AI/ML community.
+
+=== TECHNICAL SKILLS ===
+
+Frontend Development:
+- Next.js: Experienced in building full-stack applications with Server-Side Rendering (SSR) and the App Router
+- React.js: Strong expertise in React.js, worked on numerous projects with React-based frontends
+- JavaScript/TypeScript: Proficient in both JavaScript and TypeScript for building scalable applications
+- Tailwind CSS: Expert in building modern, responsive UIs with Tailwind CSS
+- HTML/CSS: Strong foundation in web fundamentals
+
+Backend Development:
+- Node.js: Experienced in building scalable backend services with Node.js
+- Express.js: Proficient in creating RESTful APIs with Express.js
+- Flask: Experienced in building Python-based APIs with Flask
+- FastAPI: Experienced in building Python-based APIs with FastAPI
+- MongoDB: Strong experience working with NoSQL databases
+- Supabase: Experienced with Supabase for authentication and database management
+- Clerk: Expertise in implementing authentication systems with Clerk
+
+AI & Machine Learning:
+- Python: Extensive experience in Python for AI/ML applications
+- OpenAI Agents SDK: Completed Agentic AI Engineer course by PIAIC
+- LangChain: Worked on several GenAI products integrating LangChain
+- LangGraph: Built multiple Agentic AI products using LangGraph for multi-step workflows
+- Groq: Integrated LLMs from Groq in various AI projects
+- ChromaDB: Experience with vector databases for RAG applications
+- Azure AI Studio: Worked with AI services from Azure AI Studio
+- RAG (Retrieval Augmented Generation): Built several RAG-based applications
+- Mistral OCR: Used for high-accuracy text extraction
+- Whisper AI and Eleven Labs: Experience with speech-to-text applications
+- HuggingFace Transformers: Worked with state-of-the-art NLP models
+
+DevOps & Cloud:
+- Docker: Experience with containerization and deployment
+- Dapr: Built distributed runtime environments with Dapr
+- Azure: Deployment and cloud services experience with Microsoft Azure
+- Vercel: Extensive experience deploying applications on Vercel
+
+Mobile Development:
+- React Native: Built cross-platform mobile applications
+- Kotlin: Developed native Android modules
+
+=== FEATURED PROJECTS ===
+
+1. VIBE TERMINAL
+   - Description: AI-powered, cross-platform terminal assistant for natural language command execution, voice input, and contextual shell automation
+   - Technologies: LangGraph, Python, RAG, ChromaDB, Novita AI, Flask, SpeechRecognition, PyAudio, pyttsx3, Typer, Rich
+   - Features: Natural language command execution, voice input and TTS feedback, multi-step agent workflows, file management, undo/redo, cross-OS compatibility
+   - Category: AI/ML, DevOps
+   - Impact: Reduces cognitive load for developers and increases productivity through intuitive terminal interaction
+   - Link: https://github.com/khursheedahmedd/vibe-terminal
+
+2. SMART GRADE AI
+   - Description: Designed and deployed a full-stack, cloud-native assessment platform for automated exam grading using
+LLMs (OpenAI, Groq, Mistral), OCR (PaddleOCR, OpenCV), and prompt-engineered LangChain
+pipelines. Architected a modular system with a MERN stack frontend, FastAPI Python AI
+microservice, and Node.js backend, all containerized with Docker and orchestrated via Docker Compose
+for seamless deployment on Azure VMs. Implemented secure, scalable infrastructure using Clerk for
+auth, MongoDB, and Cloudinary for media storage. Integrated Stripe for in-app monetization of
+AI-driven grading tools and scalable subscription management.
+Delivered features like role-based dashboards, real-time grading, automated PDF reports, and
+CLI-driven DevOps workflows. Selected as a semifinalist in Microsoft Imagine Cup 2025 and won
+multiple AI hackathons.
+   - Technologies: React.js, Tailwind CSS, Node.js, Express, Python, FastAPI, Azure OpenAI, Mistral OCR, LangGraph, MongoDB, ChromaDB, Docker, Azure
+   - Features: Automated grading with OCR and LLMs, teacher and student portals, PDF feedback reports, secure exam uploads, agentic AI implementation
+   - Category: Education, AI/ML
+   - Impact: Reduced grading time by over 80% in pilot studies, improved feedback quality
+   - Demo: https://www.youtube.com/embed/EKq1kjySOto
+   - Link: https://smartgradeai.com/
+
+3. STREAMLYAI
+   - Description: NLP application for analyzing, summarizing video, creating reels from video, and chatbot for asking questions about video and podcast transcripts
+   - Technologies: React.js, Tailwind CSS, shadcn/ui, Python, Flask, HuggingFace Transformers, Cohere, AssemblyAI, Whisper AI, LangChain, RAG, pytube, Vercel, Azure
+   - Features: Real-time transcript analysis, video summarization, sentiment analysis, chatbot for video Q&A, reel creation, speech-to-text
+   - Category: AI/ML, NLP
+   - Impact: Enabled content creators to generate summaries 10x faster
+
+4. PRIVIFY
+   - Description: Privacy-focused AI tool for detecting and removing sensitive content from images and videos
+   - Technologies: React.js, Tailwind CSS, Python, Flask, Llama 3.1 (Groq), YOLOv8, OpenCV, Mediapipe, ExifTool, ffmpeg, Vercel, Azure
+   - Features: Sensitive content detection (faces, license plates, IDs), metadata analysis, blurring/redaction, privacy by design (no data storage)
+   - Category: AI/ML, Privacy
+   - Impact: Prevented accidental sharing of private data in pilot tests
+   - Demo: https://www.youtube.com/embed/i00dVSakz8w
+
+5. CLIPSYNC
+   - Description: Built a full-stack cross-platform app for clipboard syncing, le sharing, and collaborative workspaces
+with real-time features and modular architecture. Developed the mobile app using React Native with
+Kotlin-based native overlay modules, and the web app using React (Vite + Tailwind). Implemented
+real-time sync using Socket.io, Supabase for auth, storage, and PostgreSQL DB, and integrated Stripe
+for handling premium feature subscriptions. Architected RESTful APIs with Node.js/Express, and
+ensured seamless UX across Android, web, and desktop.
+   - Technologies: React.js, React Native, Supabase, Stripe, Socket.io, Node.js, Express, Kotlin, Vite, Tailwind CSS
+   - Features: Cross-platform clipboard syncing, real-time file sharing, collaborative workspaces, premium features with Stripe, Kotlin-based native overlays
+   - Category: Full Stack, Mobile
+   - Impact: Achieved seamless clipboard sync across web, mobile, and desktop
+   - Link: https://syncmyclipboard.online/
+
+6. AGROAI
+   - Description: Generative AI assistant for farmers providing crop, soil, and weather advice with multilingual support
+   - Technologies: React.js, Tailwind CSS, Python, Flask, Azure OpenAI, LangChain, Whisper, Google Translate API, Vercel, Azure
+   - Features: Natural language chat, crop/soil/weather advice, multilingual support, geolocation integration, voice-to-text
+   - Category: AI/ML, Agriculture
+   - Impact: Increased crop yield and reduced input costs in pilot deployments
+
+7. MYVISION
+   - Description: AI-powered app for visually impaired users utilizing IBM YOLO for object detection and voice-based interaction
+   - Technologies: Next.js, React.js, Node.js, IBM YOLO
+   - Features: Real-time object detection, voice-based interaction, accessible UI/UX
+   - Category: AI/ML, Accessibility
+   - Demo: https://ibm-vision-guide.vercel.app/
+   - Repository: https://github.com/khursheedahmedd/vision-guide
+
+8. LUX RIDE SYDNEY
+   - Description: Luxury ride-sharing platform in Australia providing premium transportation services
+   - Technologies: Next.js, React.js, Node.js
+   - Features: Luxury vehicle fleet, real-time booking and tracking, secure payment integration, professional drivers
+   - Category: Full Stack, Business
+   - Demo: https://luxridesydney.com/
+   - Case Study: Platform designed for Australian market with focus on safety, reliability, and customer experience
+   - Impact: Increased customer satisfaction, high safety ratings, growing user base in Sydney
+
+9. SupplyBox – AI-Powered Campus Recruitment Platform
+Tech Stack: Next.js 14 (TypeScript), FastAPI, PostgreSQL, DuckDB, Prisma, Cohere, Groq LLM, Tailwind, NextAuth
+
+Role: Full Stack & AI Engineer (Architecture + AI Integration)
+
+SupplyBox is a large-scale AI-driven campus recruitment platform designed to connect universities, students, and employers through intelligent automation. The system consists of two major components: a Next.js main platform (werecruit-main) and a FastAPI-based RAG microservice (resume-rag), working together seamlessly to deliver a smooth, data-driven hiring experience.
+
+The platform uses Retrieval-Augmented Generation (RAG) and AI-driven semantic search to help HR teams and universities find the right candidates instantly, process thousands of resumes, conduct automated interviews, and gain deep insights into hiring trends.
+
+⚙️ Architecture Overview
+
+SupplyBox follows a two-service architecture:
+
+Frontend (werecruit-main): A full-featured Next.js 14.2.7 web application using TypeScript, Tailwind CSS, and Prisma ORM with PostgreSQL. It handles user dashboards, campaign management, authentication, analytics, and report generation.
+
+Backend (resume-rag): A FastAPI microservice responsible for all AI functionalities including embeddings, resume indexing, and semantic querying. It uses Cohere embeddings for vectorization and Groq LLM for intelligent query optimization.
+
+Both services communicate through secure REST APIs, enabling modular scaling across Render, Railway, or Vercel environments.
+
+💡 Core Features
+
+AI-Powered Resume Screening:
+Automatically parses and analyzes resumes using LlamaParse and stores vectorized representations for semantic search. Handles bulk uploads efficiently with async background processing.
+
+Semantic Search Engine:
+Lets HR teams find candidates using natural language queries such as “Find senior React developers with AWS experience.” The Groq LLM refines queries, while Cohere embeddings perform similarity search with transparent ranking explanations.
+
+Advanced Rubric System:
+Includes pre-built and customizable evaluation rubrics for different roles. The AI automatically scores and explains candidate evaluations using detailed per-criterion feedback.
+
+AI Interview System:
+Enables asynchronous voice and video interviews with AI-based scoring, cheating detection, and candidate personality insights.
+
+Campus Analytics & Insights:
+Provides data-driven insights into placement performance, skill gaps, and hiring trends across multiple universities.
+
+Multi-Campus Management:
+Supports universities with batch management, department-level organization, and multilingual support for global scalability.
+
+🔄 Data Flow
+
+Resume Upload → Parsed via LlamaParse → Vectorized with Cohere → Stored in DuckDB
+
+Campaign Creation → HR selects rubric → Configures AI evaluation
+
+Search Query → Enhanced by Groq → Vector search via RAG service
+
+Results → Ranked and explained by AI → Displayed with analytics dashboard
+
+🚀 Key Achievements
+
+Built production-ready architecture with modular AI integration
+
+Designed DuckDB vector store for local semantic search
+
+Integrated Groq and Cohere APIs for hybrid RAG querying
+
+Implemented NextAuth for multi-role authentication (HR, student, admin)
+
+Created real-time analytics dashboards with interactive charts and filters
+
+Fully deployable stack across Vercel + Render with optimized memory footprint
+
+📈 Impact
+
+SupplyBox drastically improves campus recruitment workflows by cutting down hiring time, automating resume screening, and ensuring data-backed decisions. For universities, it unlocks rich analytics and placement insights; for companies, it simplifies candidate discovery; and for students, it ensures fair and transparent evaluation.
+
+The project demonstrates my ability to architect complex multi-service AI systems, optimize performance for production, and merge deep learning with modern web frameworks.
+
+
+
+10. Snooker Vision – AI-Powered Snooker Automation System
+
+Tech Stack: FastAPI, React (TypeScript + Vite), LangGraph, LangChain, OpenAI, ChromaDB, YOLO, Celery, Supabase, Redis, PostgreSQL
+
+Role: Lead AI & Full Stack Engineer
+
+Snooker Vision is a state-of-the-art AI and computer vision system that automates the monitoring, scoring, and management of snooker games. It integrates multi-agent AI workflows, computer vision, and club management features into one seamless platform, redefining how snooker clubs operate.
+
+The platform captures real-time gameplay, identifies ball positions and movements, infers player actions, updates scores automatically, and even generates detailed insights and summaries — all powered by AI agents working together under a supervisor model.
+
+🧠 Multi-Agent AI System
+
+The system uses a 10-agent orchestrated workflow powered by LangGraph + LangChain:
+
+Supervisor Agent – Central controller managing agent coordination and task routing
+
+Calibration Agent – Table detection and homography setup
+
+Detection Agent – Object detection via YOLO (balls, cues, pockets)
+
+Tracking Agent – Multi-object tracking using ByteTrack/DeepSORT
+
+Event Fusion Agent – Shot inference, foul detection, and pot events
+
+Rules & Scoring Agent – Implements snooker’s full scoring logic
+
+Session Manager Agent – Game session segmentation and time tracking
+
+Billing Agent – Automated cost computation and invoice generation
+
+Narration & Insights Agent – Generates natural language commentary and match summaries
+
+Anomaly QA Agent – Diagnoses inconsistencies and responds to operator questions
+
+The system’s RAG knowledge base supports natural language querying about rules, club policies, or scoring anomalies using ChromaDB + embeddings for semantic retrieval.
+
+⚙️ Computer Vision & RAG Integration
+
+Real-time ball detection, cue tracking, and event recognition
+
+Homography-based table calibration
+
+Detection of century breaks, drift, and foul events
+
+Integration with RAG for querying snooker rules, historical data, or technical troubleshooting
+
+💼 Business & Management Features
+
+Full club management system (users, sessions, billing)
+
+Multiple billing models (hourly, per-game, hybrid)
+
+Automated invoices and real-time session monitoring
+
+Financial analytics dashboards and performance charts
+
+Natural language game summaries and insights
+
+🖥️ Frontend & UX
+
+Built using React + TypeScript + Vite, with Radix UI + Tailwind CSS for sleek design. Features include:
+
+Dark/light themes
+
+Interactive dashboards and charts (Recharts)
+
+Game and financial analytics visualization
+
+Secure authentication via Supabase Auth
+
+Optimized API interactions with React Query
+
+🚀 Impact
+
+Snooker Vision transforms traditional snooker clubs into smart, automated environments. By combining real-time AI monitoring with data-driven analytics, it eliminates human error, improves player engagement, and provides club owners with unprecedented insights into operations and performance.
+
+=== PROJECT STATISTICS ===
+
+Total Projects: 10 major production applications
+Categories:
+- AI/ML Applications: 8 projects (80%)
+- Full Stack Web Applications: 2 projects (20%)
+
+Technology Distribution:
+- Frontend: React.js (10), Next.js (5), TypeScript (8), Tailwind CSS (9)
+- Backend: Python/Flask/FastAPI (8), Node.js/Express (6), MongoDB (3)
+- AI/ML: LangChain (7), LangGraph (5), Azure OpenAI (4), Groq (3), ChromaDB (4)
+- Cloud/DevOps: Azure (7), Vercel (6), Docker (5)
+- Computer Vision: YOLO (2), OpenCV (2)
+
+Key Features Implemented:
+- RAG Systems: 6 projects
+- Agentic AI Workflows (LangGraph): 5 projects
+- Multi-Agent Systems: 2 projects
+- OCR/Document Processing: 3 projects
+- Voice Interaction: 3 projects
+- Real-time Collaboration: 3 projects
+- Computer Vision: 3 projects
+- Multilingual Support: 1 project
+- Billing & Payment Systems: 3 projects
+
+Deployment Status: All projects deployed on production with live demos or repositories
+
+=== AWARDS & ACHIEVEMENTS ===
+
+1. Microsoft Imagine Cup 2025 Semifinalist (April 2025)
+   - Achievement: Reached semifinals in Microsoft's prestigious global student technology competition
+   - Role: Product Lead
+   - Recognition: Certificate of appreciation from Microsoft
+   - Impact: Competed against thousands of teams worldwide
+   - Platform: Microsoft Imagine Cup
+   - Verification: https://imaginecup.microsoft.com/en-US/Member/WinnerCertificate
+   - Category: Innovation & Entrepreneurship
+
+2. Meta Hacker Cup 2025
+   - Achievement: Ranked top 40 globally out of 14,000+ participants in first round of Meta Hacker Cup 2025
+
+3. Agentic AI Hackathon Winner by Microsoft Reactor (June 2025)
+   - Achievement: Led winning team in AI Agents Hackathon
+   - Role: Project Lead and Technical Architect
+   - Platform: Microsoft Reactor
+   - Focus: Built agentic AI systems using LangGraph and multi-agent workflows
+   - Recognition: Official certificate and Credly badge
+   - Verification: https://www.credly.com/badges/c803e5e1-1a64-4ad2-ae65-316086a06bf7/public_url
+   - Category: Artificial Intelligence
+
+4. Generative AI Hackathon with IBM - 3rd Place (October 2024)
+   - Achievement: Delivered 3rd best solution in IBM's Generative AI Hackathon
+   - Platform: IBM via Lablab.ai
+   - Focus: Built innovative GenAI application using IBM Watson and LLMs
+   - Recognition: Top 3 finish among global participants
+   - Verification: https://lablab.ai/u/@khursheed_ahmed940/cm1g74kvj0040u2dakvip8cmp
+   - Category: Generative AI
+
+5. Google Gemma 2 AI Challenge - 2nd Place (November 2024)
+   - Achievement: Delivered 2nd best solution in Google's Gemma 2 AI Challenge
+   - Platform: Google via Lablab.ai
+   - Focus: Leveraged Google's Gemma 2 model for innovative AI solution
+   - Recognition: Silver medal position in competitive global hackathon
+   - Verification: https://lablab.ai/u/@khursheed_ahmed940/cm4mv1xnv000ax1taaq8te9ys
+   - Category: Large Language Models
+
+6. Reasoning with GPT Model o1 Hackathon (November 2024)
+   - Achievement: Successfully delivered solution using OpenAI's o1 reasoning model
+   - Platform: OpenAI via Lablab.ai
+   - Focus: Built application leveraging advanced reasoning capabilities of GPT o1
+   - Recognition: Completion certificate
+   - Verification: https://lablab.ai/u/@khursheed_ahmed940/cm4wx1o8a002sfu6i1spxdyhd
+   - Category: Advanced AI Reasoning
+
+
+=== HACKATHON TRACK RECORD ===
+
+Total Hackathons: 25+ major AI/ML competitions
+Wins & Placements: 3 top-3 finishes (1x Semifinalist, 1x 3rd Place, 1x 2nd Place)
+Success Rate: 60% placement rate in competitive global hackathons
+Focus Areas: Generative AI, Agentic AI, LLMs, RAG systems
+Notable: Consistent track record in Microsoft, Meta, IBM, Google, and OpenAI challenges
+
+
+=== TECHNOLOGY STACK EXPERTISE ===
+
+Khursheed has hands-on experience with over 20 technologies across different categories:
+- 8 Frontend technologies (Next.js, React.js, JavaScript, TypeScript, Tailwind CSS, etc.)
+- 7 Backend technologies (Node.js, Express.js, Flask, MongoDB, Supabase, Clerk)
+- 4 DevOps technologies (Docker, Vercel, Azure, Dapr)
+- 9 AI/ML technologies (Python, LangChain, LangGraph, OpenAI Agents SDK, Groq, ChromaDB, Azure AI Studio)
+
+=== WORK APPROACH ===
+
+Khursheed prioritizes:
+- Security and performance for all client projects
+- Using top-tier technologies for every product
+- Building scalable, production-ready solutions
+- Following best practices in code quality and architecture
+- User-centered design and accessibility
+- Modern UI/UX with beautiful, responsive designs
+
+=== CONTACT INFORMATION ===
+
+Primary:
+- Portfolio Website: https://khursheed.online (also https://khursheedahmed.dev)
+- GitHub: https://github.com/khursheedahmedd
+- LinkedIn: Available on portfolio website
+- Email: khursheed6577@gmail.com
+- WhatsApp: +923417122946 (for quick inquiries)
+
+Social Media:
+- Dribble: Available on portfolio
+- Instagram: Available on portfolio
+- All social links accessible via portfolio website
+
+Professional Profiles:
+- Lablab.ai: https://lablab.ai/u/@khursheed_ahmed940 (Hackathon achievements)
+- Credly: https://www.credly.com (Microsoft certifications)
+- Microsoft Imagine Cup: Verified participant and semifinalist
+
+=== AREAS OF EXPERTISE ===
+
+Primary Focus Areas:
+1. Full Stack Web Development (MERN/MEAN stack)
+2. Generative AI Engineering (LLMs, RAG, Fine-tuning)
+3. Agentic AI Engineering (LangGraph, Multi-agent systems)
+4. Cloud Architecture (Azure, Vercel)
+5. Mobile Development (React Native, Kotlin)
+
+Special Interests:
+- Conversational AI and Chatbots
+- Computer Vision applications
+- Voice-enabled applications
+- Privacy-preserving AI
+- Educational technology
+- Agricultural technology
+
+=== PROJECT CATEGORIES ===
+
+Khursheed has worked on projects across multiple domains:
+- AI/ML Applications (6 major projects)
+- Full Stack Web Applications (2+ projects)
+- Educational Technology
+- Healthcare AI
+- Privacy and Security Tools
+- Agricultural Technology
+- Accessibility Solutions
+
+=== NOTABLE FEATURES ACROSS PROJECTS ===
+
+- RAG (Retrieval Augmented Generation) implementations
+- Agentic AI workflows with LangGraph
+- OCR and document processing
+- Voice interaction systems
+- Real-time collaboration features
+- Cross-platform synchronization
+- Secure authentication and payment systems
+- Multilingual support
+- Computer vision applications
+- Natural language processing
+
+=== DEVELOPMENT PHILOSOPHY ===
+
+Khursheed believes in:
+- Building solutions that solve real-world problems
+- Staying current with latest technologies and best practices
+- Creating accessible and inclusive applications
+- Writing clean, maintainable, and well-documented code
+- Performance optimization and scalability
+- Security-first approach
+- User experience as a priority
+
+=== AVAILABILITY ===
+
+Khursheed is available for:
+- Full-time positions
+- Freelance projects
+- Consulting opportunities
+- Collaboration on innovative AI/ML projects
+- Open source contributions
+
+Interested parties can reach out through the contact form on his portfolio website or connect via social media links provided on the site.
+
+=== TECHNICAL ARTICLES & INSIGHTS ===
+
+Khursheed has written extensively about:
+- The future of AI and its transformative impact on industries
+- How Generative AI is revolutionizing creative fields
+- AI Agents and autonomous systems
+- Modern web development trends (PWAs, Serverless, Jamstack, WebAssembly)
+- Mastering CSS frameworks like Tailwind CSS
+- Best practices in full stack development
+
+His writing demonstrates deep technical knowledge combined with the ability to explain complex concepts clearly.
+
+=== EDUCATION & CONTINUOUS LEARNING ===
+
+Formal Education:
+- Bachelor in Software Engineering from University of Management and Technology, Lahore
+- Focus on Full Stack Development and AI/ML
+
+Professional Development:
+- Agentic AI Engineer Course by PIAIC (Presidential Initiative for Artificial Intelligence and Computing)
+- Completed specialized training in OpenAI Agents SDK
+- Self-taught in advanced AI/ML technologies through hands-on project work
+- Active participant in hackathons for continuous learning and skill validation
+
+Learning Philosophy:
+- Believes in learning by building real-world projects
+- Stays current with latest AI/ML research and web development trends
+- Participates in global hackathons to challenge skills and learn from peers
+- Contributes to open-source and shares knowledge through technical writing
+
+=== CORE COMPETENCIES ===
+
+Technical Leadership:
+- Led teams in 8+ major hackathons with successful outcomes
+- Architected full-stack and AI/ML solutions from concept to deployment
+- Made critical technical decisions for scalability and performance
+- Co-founded and served as CTO for 3 startups
+
+Problem-Solving:
+- Excels at identifying real-world problems and building AI-powered solutions
+- Examples: Automated grading (Smart Grade AI), Privacy protection (Privify), Farmer assistance (AgroAI)
+- Strong focus on practical applications over theoretical implementations
+
+Innovation:
+- Early adopter of cutting-edge technologies (LangGraph, Groq, Azure AI)
+- Built innovative solutions before they became mainstream
+- Combines multiple technologies creatively (e.g., RAG + Voice + Computer Vision)
+
+Communication:
+- Writes comprehensive technical documentation
+- Creates detailed case studies for each project
+- Active technical blogger with 5+ published articles
+- Ability to explain complex AI concepts to non-technical stakeholders
+
+=== PROJECT IMPACT METRICS ===
+
+Quantifiable Results:
+- Smart Grade AI: 80% reduction in grading time
+- StreamlyAI: 10x faster content summary generation
+- AgroAI: Increased crop yield and reduced costs in pilot deployments
+- Privify: Prevented data breaches in pilot tests
+- Vibe Terminal: Reduced cognitive load and increased developer productivity
+
+User Reach:
+- Projects deployed on production with public demos
+- Applications used by teachers, content creators, farmers, developers
+- Positive user feedback across multiple projects
+- Growing user base in production applications
+
+=== PROFESSIONAL QUALITIES ===
+
+Work Ethic:
+- Completes projects from start to finish
+- Delivers production-ready, not just prototype solutions
+- Attention to detail in code quality and user experience
+- Committed to deadlines and project milestones
+
+Collaboration:
+- Team player with leadership experience
+- Effective communicator in technical discussions
+- Mentors junior developers in AI/ML technologies
+- Open to feedback and continuous improvement
+
+Innovation Mindset:
+- Always exploring new technologies and frameworks
+- Applies AI creatively to solve domain-specific problems
+- Balances innovation with practical business needs
+- Focus on user-centered design and accessibility
+
+=== TECHNOLOGY PREFERENCES ===
+
+Go-To Stack for Web Applications:
+- Frontend: Next.js + React + TypeScript + Tailwind CSS
+- Backend: Node.js + Express OR Python + Flask
+- Database: MongoDB (NoSQL) or Supabase (PostgreSQL)
+- Authentication: Clerk or Supabase Auth
+- Deployment: Vercel (frontend) + Azure (backend)
+
+Go-To Stack for AI/ML Applications:
+- Language: Python
+- Frameworks: LangChain, LangGraph
+- LLMs: Groq (Llama 3.1), Azure OpenAI
+- Vector DB: ChromaDB
+- RAG: Custom implementations with LangChain
+- Deployment: Azure, Docker containers
+
+Development Tools:
+- Version Control: Git, GitHub
+- IDE: VS Code (with AI assistants)
+- API Testing: Postman, Thunder Client
+- Containerization: Docker
+- CI/CD: GitHub Actions, Vercel
+
+=== CURRENT FOCUS ===
+
+Active Areas of Exploration:
+- Advanced agentic AI systems with LangGraph
+- Multi-modal AI applications (text + vision + audio)
+- Production-scale RAG systems
+- Privacy-preserving AI implementations
+- Real-time collaborative applications
+
+Upcoming Projects:
+- Continuing to build innovative AI/ML solutions
+- Exploring edge AI and on-device processing
+- Contributing to open-source AI tools
+- Writing more technical content and case studies
+
+=== WHY WORK WITH KHURSHEED ===
+
+Unique Value Proposition:
+1. Rare combination of Full Stack + AI/ML expertise
+2. Proven track record with hackathon wins and production apps
+3. Can handle entire product lifecycle from concept to deployment
+4. Strong focus on practical, business-oriented solutions
+5. Excellent communication and documentation skills
+6. Fast learner who adapts quickly to new technologies
+7. Passionate about building solutions that make real impact
+
+Best Fit For:
+- Startups building AI-powered products
+- Companies modernizing with AI/ML integration
+- Projects requiring both web development and AI expertise
+- Innovative products at the intersection of AI and user experience
+- Teams valuing thorough documentation and clean code
+
+=== AVAILABILITY & RATES ===
+
+Open To:
+- Full-time positions (Remote or hybrid)
+- Freelance projects (3+ months commitment preferred)
+- Consulting engagements (AI/ML strategy, technical architecture)
+- Contract work (Full stack + AI development)
+- Collaboration on innovative AI/ML research projects
+
+Project Preferences:
+- Meaningful projects solving real-world problems
+- Opportunity to work with cutting-edge AI technologies
+- Teams that value quality and innovation
+- Products with social or environmental impact
+- Continuous learning and growth opportunities
+
+Response Time:
+- Typically responds to inquiries within 24-48 hours
+- Available for initial consultations via video call
+- Can provide portfolio walkthroughs and technical discussions
+- References and detailed project documentation available upon request
+
